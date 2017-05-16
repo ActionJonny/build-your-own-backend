@@ -9,7 +9,7 @@ const writeToFile = (path, data) => {
     if (err) {
       console.error('Error:', err.message);
     } else {
-      console.log('Successful Write to ./test.txt');
+      console.log(`Successful Write to ${path}`);
     }
   });
 };
