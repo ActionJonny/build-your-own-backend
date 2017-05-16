@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "scrap": "node scrapeData.js",
+    "start": "nodemon server/index.js",
+    "scrape": "node scrapeData.js",
     "test": "./node_modules/.bin/mocha"
   },
   "keywords": [],
