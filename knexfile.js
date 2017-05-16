@@ -14,6 +14,18 @@ module.exports = {
     },
   },
 
+  test: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL || 'postgres://localhost/byob_test',
+    useNullAsDefault: true,
+    migrations: {
+      directory: './db/migrations',
+    },
+    seeds: {
+      directory: './db/seeds/test',
+    },
+  },
+
   staging: {
     client: 'postgresql',
     connection: {
