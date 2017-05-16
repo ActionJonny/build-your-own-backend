@@ -14,6 +14,10 @@ app.set('port', process.env.PORT || 3000);
 app.use('/api/v1', categories);
 app.use('/api/v1', styles);
 
+app.get('/*', (request, response) => {
+  response.status(404).send({ error: 'Not Found' });
+});
+
 app.listen(app.get('port'), () => {
   console.log(`Server is listening on ${(app.get('port'))}`);
 });

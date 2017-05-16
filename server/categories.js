@@ -11,7 +11,7 @@ categories.get('/categories', (request, response) => {
       response.status(200).json(categories);
     })
     .catch((error) => {
-      console.error('error:', error);
+      response.status(500).send({ error: error });
     });
 });
 
@@ -19,10 +19,14 @@ categories.get('/categories/:id', (request, response) => {
   const { id } = request.params;
   database('categories').where('id', id)
     .then((category) => {
-      response.status(200).json(category);
+      if (!category.length) {
+        response.status(404).send({ error: 'Category does not exist' });
+      } else {
+        response.status(200).json(category);
+      }
     })
     .catch((error) => {
-      console.error('error:', error);
+      response.status(500).send({ error: error });
     });
 });
 
