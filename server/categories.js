@@ -11,7 +11,7 @@ categories.get('/categories', (request, response) => {
       response.status(200).json(categories);
     })
     .catch((error) => {
-      response.status(500).send({ error: error });
+      response.status(500).send({ error });
     });
 });
 
@@ -26,7 +26,22 @@ categories.get('/categories/:id', (request, response) => {
       }
     })
     .catch((error) => {
-      response.status(500).send({ error: error });
+      response.status(500).send({ error });
+    });
+});
+
+categories.get('/categories/:id/styles', (request, response) => {
+  const { id } = request.params;
+  database('styles').where('category_id', id).select()
+    .then((styles) => {
+      if (!styles.length) {
+        response.status(404).send({ error: 'No styles found for this category' });
+      } else {
+        response.status(200).json(styles);
+      }
+    })
+    .catch((error) => {
+      response.status(500).send({ error });
     });
 });
 

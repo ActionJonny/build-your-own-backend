@@ -11,7 +11,7 @@ styles.get('/styles', (request, response) => {
       response.status(200).json(styles);
     })
     .catch((error) => {
-      response.status(500).send({ error: error });
+      response.status(500).send({ error });
     });
 });
 
@@ -20,13 +20,13 @@ styles.get('/styles/:id', (request, response) => {
   database('styles').where('id', id)
     .then((style) => {
       if (!style.length) {
-        response.status(404).send({ error: 'Style does not exist' })
+        response.status(404).send({ error: 'Style does not exist' });
       } else {
         response.status(200).json(style);
       }
     })
     .catch((error) => {
-      response.status(500).send({ error: error });
+      response.status(500).send({ error });
     });
 });
 
