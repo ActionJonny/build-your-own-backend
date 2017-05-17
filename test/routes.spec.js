@@ -131,4 +131,29 @@ describe('API Routes', () => {
     });
   });
 
+  describe('GET /api/v1/categories/:id/styles', () => {
+    it('should return a specific set of styles for a category', (done) => {
+      chai.request(server)
+      .get('/api/v1/categories/5/styles')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(16);
+        response.body[0].category_id.should.equal(5);
+        done();
+      });
+    });
+
+    it('should return and error if no styles are found for the selected category', (done) => {
+      chai.request(server)
+      .get('/api/v1/categories/100/styles')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'No styles found for this category' });
+        done();
+      });
+    });
+  });
+
 });
