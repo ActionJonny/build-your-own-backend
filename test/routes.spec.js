@@ -156,4 +156,88 @@ describe('API Routes', () => {
     });
   });
 
+  describe('GET /api/v2/breweries', () => {
+    it('should return a json object of all breweries', (done) => {
+      chai.request(server)
+      .get('/api/v2/breweries')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(1414);
+        response.body[0].should.have.property('id');
+        response.body[0].should.have.property('name');
+        response.body[0].should.have.property('address1');
+        response.body[0].should.have.property('city');
+        response.body[0].should.have.property('state');
+        response.body[0].should.have.property('code');
+        response.body[0].should.have.property('country');
+        done();
+      });
+    });
+
+    it('should throw an error on a failed GET to /breweries', (done) => {
+      chai.request(server)
+      .get('/api/v1/breweriesssss')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Not Found' });
+        done();
+      });
+    });
+  });
+
+  describe('GET /api/v2/beers', () => {
+    it('should return a json object of all beers', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(500);
+        response.body[0].should.have.property('id');
+        response.body[0].should.have.property('name');
+        response.body[0].should.have.property('cat_id');
+        response.body[0].should.have.property('style_id');
+        done();
+      });
+    });
+
+    it('should throw an error on a failed GET to /beers', (done) => {
+      chai.request(server)
+      .get('/api/v1/beersssss')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Not Found' });
+        done();
+      });
+    });
+  });
+
+  describe('GET /api/v1/breweries/:id/beers', () => {
+    it('should return a specific set of beers for a brewery', (done) => {
+      chai.request(server)
+      .get('/api/v2/breweries/14/beers')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(6);
+        response.body[0].brewery_id.should.equal(14);
+        done();
+      });
+    });
+
+    it('should return and error if no beers are found for the selected brewery', (done) => {
+      chai.request(server)
+      .get('/api/v2/breweries/1000/beers')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'No beers found for this brewery' });
+        done();
+      });
+    });
+  });
+
 });
