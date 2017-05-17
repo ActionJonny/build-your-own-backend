@@ -226,13 +226,36 @@ describe('API Routes', () => {
       });
     });
 
-    it('should throw an error on a failed GET to /beers/QUERY', (done) => {
+    it('should throw an error on a failed GET to /beers/QUERY for category', (done) => {
       chai.request(server)
       .get('/api/v2/beers?category=No%20Beer%20Here')
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
         response.body.should.deep.equal({ error: 'No beers found for that category' });
+        done();
+      });
+    });
+
+    it('should return a json object of beers for a selected beer style', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers?style=American-Style%20Pale%20Ale')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(45);
+        response.body[0].style_id.should.equal('26');
+        done();
+      });
+    });
+
+    it('should throw an error on a failed GET to /beers/QUERY for style', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers?style=No%20Style%20Here')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'No beers found for that style' });
         done();
       });
     });
