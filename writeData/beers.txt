@@ -1,0 +1,3502 @@
+[
+  {
+    "id": "1",
+    "brewery_id": "812",
+    "name": "Hocus Pocus",
+    "cat_id": "11",
+    "style_id": "116"
+  },
+  {
+    "id": "2",
+    "brewery_id": "264",
+    "name": "Grimbergen Blonde",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "3",
+    "brewery_id": "779",
+    "name": "Widdershins Barleywine",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "4",
+    "brewery_id": "287",
+    "name": "Lucifer",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "5",
+    "brewery_id": "1056",
+    "name": "Bitter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "6",
+    "brewery_id": "1385",
+    "name": "Winter Warmer",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "7",
+    "brewery_id": "1099",
+    "name": "Winter Welcome 2007-2008",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "8",
+    "brewery_id": "1099",
+    "name": "Oatmeal Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "9",
+    "brewery_id": "501",
+    "name": "Espresso Porter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "10",
+    "brewery_id": "545",
+    "name": "Chocolate Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "11",
+    "brewery_id": "742",
+    "name": "Hitachino Nest Real Ginger Brew",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "12",
+    "brewery_id": "779",
+    "name": "JuJu Ginger",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "13",
+    "brewery_id": "545",
+    "name": "The Kidd Lager",
+    "cat_id": "7",
+    "style_id": "86"
+  },
+  {
+    "id": "14",
+    "brewery_id": "1099",
+    "name": "Imperial Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "15",
+    "brewery_id": "1315",
+    "name": "Oak-Aged Belgian Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "16",
+    "brewery_id": "168",
+    "name": "Ultrablonde",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "17",
+    "brewery_id": "1023",
+    "name": "Wiesen Edel Weisse",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "18",
+    "brewery_id": "39",
+    "name": "Old Foghorn 2001",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "19",
+    "brewery_id": "196",
+    "name": "Framboise",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "20",
+    "brewery_id": "483",
+    "name": "Cow Palace Scotch Ale 1998",
+    "cat_id": "1",
+    "style_id": "15"
+  },
+  {
+    "id": "21",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2001",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "22",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2002",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "23",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2003",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "24",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2004",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "25",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2005",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "26",
+    "brewery_id": "1220",
+    "name": "Winter Ale",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "27",
+    "brewery_id": "878",
+    "name": "Full Moon Winter Ale",
+    "cat_id": "5",
+    "style_id": "72"
+  },
+  {
+    "id": "28",
+    "brewery_id": "935",
+    "name": "Odell IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "29",
+    "brewery_id": "1271",
+    "name": "Ornery Amber Lager",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "30",
+    "brewery_id": "935",
+    "name": "Cutthroat Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "31",
+    "brewery_id": "1271",
+    "name": "Maple Nut Brown Ale Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "32",
+    "brewery_id": "1271",
+    "name": "Cocoa Porter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "33",
+    "brewery_id": "190",
+    "name": "Jenlain Blonde",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "34",
+    "brewery_id": "196",
+    "name": "Blonde",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "35",
+    "brewery_id": "432",
+    "name": "Flemish Primitive Wild Ale (Demon Fish)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "36",
+    "brewery_id": "294",
+    "name": "Witkap-Pater Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "37",
+    "brewery_id": "1175",
+    "name": "Winter Cheer",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "38",
+    "brewery_id": "743",
+    "name": "Canaster Winter Scotch",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "39",
+    "brewery_id": "1307",
+    "name": "16",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "40",
+    "brewery_id": "1307",
+    "name": "Quelque Chose",
+    "cat_id": "5",
+    "style_id": "70"
+  },
+  {
+    "id": "41",
+    "brewery_id": "277",
+    "name": "Kriek",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "42",
+    "brewery_id": "170",
+    "name": "BiÃ¨re Darbyste",
+    "cat_id": "11",
+    "style_id": "116"
+  },
+  {
+    "id": "43",
+    "brewery_id": "723",
+    "name": "Maracaibo Especial",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "44",
+    "brewery_id": "432",
+    "name": "Flemish Primitive Wild Ale (Pin Head)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "45",
+    "brewery_id": "723",
+    "name": "Calabaza Blanca",
+    "cat_id": "5",
+    "style_id": "72"
+  },
+  {
+    "id": "46",
+    "brewery_id": "901",
+    "name": "Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "47",
+    "brewery_id": "901",
+    "name": "Cardinal Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "48",
+    "brewery_id": "176",
+    "name": "Zinnebir Xmas",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "49",
+    "brewery_id": "974",
+    "name": "Bridal Ale 2005",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "50",
+    "brewery_id": "176",
+    "name": "Zinnebir",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "51",
+    "brewery_id": "432",
+    "name": "Saison Imperiale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "52",
+    "brewery_id": "170",
+    "name": "La Moneuse",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "53",
+    "brewery_id": "901",
+    "name": "Red Sled Winter Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "54",
+    "brewery_id": "39",
+    "name": "Christmas Ale 2007",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "55",
+    "brewery_id": "176",
+    "name": "Equinox Dark Belgian Winter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "56",
+    "brewery_id": "856",
+    "name": "Serafijn Christmas Angel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "57",
+    "brewery_id": "160",
+    "name": "Obovoid Empirical Stout",
+    "cat_id": "3",
+    "style_id": "43"
+  },
+  {
+    "id": "58",
+    "brewery_id": "1221",
+    "name": "Furious Beer",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "59",
+    "brewery_id": "1221",
+    "name": "Bender Beer",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "60",
+    "brewery_id": "1315",
+    "name": "Oak Aged Ebenezer",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "61",
+    "brewery_id": "160",
+    "name": "Killer Penguin",
+    "cat_id": "3",
+    "style_id": "35"
+  },
+  {
+    "id": "62",
+    "brewery_id": "236",
+    "name": "Oatmeal Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "63",
+    "brewery_id": "935",
+    "name": "Isolation Ale",
+    "cat_id": "11",
+    "style_id": "141"
+  },
+  {
+    "id": "64",
+    "brewery_id": "501",
+    "name": "Festive Ale 2007",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "65",
+    "brewery_id": "586",
+    "name": "Bourbon County Stout 2007",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "66",
+    "brewery_id": "670",
+    "name": "Twelve Days",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "67",
+    "brewery_id": "1056",
+    "name": "Seriously Bad Elf",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "68",
+    "brewery_id": "905",
+    "name": "Big Shot Seasonal Ale",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "69",
+    "brewery_id": "923",
+    "name": "God Jul - Winter Ale",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "70",
+    "brewery_id": "1142",
+    "name": "Harvest Ale 2007",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "71",
+    "brewery_id": "161",
+    "name": "Nut Cracker Ale",
+    "cat_id": "11",
+    "style_id": "141"
+  },
+  {
+    "id": "72",
+    "brewery_id": "779",
+    "name": "Goosinator Smoked Doppelbock 2007",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "73",
+    "brewery_id": "779",
+    "name": "Snow Bound Winter Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "74",
+    "brewery_id": "779",
+    "name": "Warrior IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "75",
+    "brewery_id": "266",
+    "name": "Petrus Oud Bruin",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "76",
+    "brewery_id": "266",
+    "name": "Petrus Gouden Tripel Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "77",
+    "brewery_id": "266",
+    "name": "Petrus Blond Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "78",
+    "brewery_id": "266",
+    "name": "Petrus Dubbel Bruin Ale",
+    "cat_id": "5",
+    "style_id": "60"
+  },
+  {
+    "id": "79",
+    "brewery_id": "266",
+    "name": "Petrus Speciale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "80",
+    "brewery_id": "1202",
+    "name": "Weizengold Hefefein",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "81",
+    "brewery_id": "160",
+    "name": "Never Summer Ale",
+    "cat_id": "11",
+    "style_id": "141"
+  },
+  {
+    "id": "82",
+    "brewery_id": "1264",
+    "name": "Modern Monks Belgian Blonde",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "83",
+    "brewery_id": "1264",
+    "name": "Grand Cru",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "84",
+    "brewery_id": "210",
+    "name": "JÃ¶rger WeiÃŸe Hell",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "85",
+    "brewery_id": "1272",
+    "name": "OSB Premium Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "86",
+    "brewery_id": "425",
+    "name": "Morocco Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "87",
+    "brewery_id": "1047",
+    "name": "Glacier Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "88",
+    "brewery_id": "1047",
+    "name": "Bent Nail IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "89",
+    "brewery_id": "879",
+    "name": "Espresso Porter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "90",
+    "brewery_id": "879",
+    "name": "Harvest Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "91",
+    "brewery_id": "879",
+    "name": "Stillwater Rye",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "92",
+    "brewery_id": "879",
+    "name": "Sharptail Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "93",
+    "brewery_id": "879",
+    "name": "Fat Belly Amber",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "94",
+    "brewery_id": "879",
+    "name": "Whitetail Wheat",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "95",
+    "brewery_id": "879",
+    "name": "Sandbagger Gold",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "96",
+    "brewery_id": "901",
+    "name": "Brunette Nut Brown Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "97",
+    "brewery_id": "901",
+    "name": "Irish Red",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "98",
+    "brewery_id": "901",
+    "name": "Belgian Wit",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "99",
+    "brewery_id": "901",
+    "name": "EOS Hefeweizen",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "100",
+    "brewery_id": "901",
+    "name": "India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "101",
+    "brewery_id": "1185",
+    "name": "Winter Ale",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "102",
+    "brewery_id": "1260",
+    "name": "Pride & Joy Mild Ale",
+    "cat_id": "1",
+    "style_id": "10"
+  },
+  {
+    "id": "103",
+    "brewery_id": "1260",
+    "name": "Robert the Bruce Scottish Ale",
+    "cat_id": "1",
+    "style_id": "15"
+  },
+  {
+    "id": "104",
+    "brewery_id": "1056",
+    "name": "Lump of Coal Dark Holiday Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "105",
+    "brewery_id": "1056",
+    "name": "Warm Welcome Nut Browned Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "106",
+    "brewery_id": "884",
+    "name": "Pendle Witches Brew",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "107",
+    "brewery_id": "345",
+    "name": "Carnegie Stark-Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "108",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2002",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "109",
+    "brewery_id": "1075",
+    "name": "Woody Organic IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "110",
+    "brewery_id": "620",
+    "name": "Adriaan",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "111",
+    "brewery_id": "304",
+    "name": "Leute Bok Bier",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "112",
+    "brewery_id": "905",
+    "name": "La Folie Falling Rock",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "113",
+    "brewery_id": "1315",
+    "name": "Oak Aged IPA",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "114",
+    "brewery_id": "304",
+    "name": "Tikka Gold",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "115",
+    "brewery_id": "179",
+    "name": "La Divine Double Blond",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "116",
+    "brewery_id": "179",
+    "name": "La Divine Tripel Amber",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "117",
+    "brewery_id": "292",
+    "name": "Ename Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "118",
+    "brewery_id": "827",
+    "name": "Triple Dipsea Belgian",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "119",
+    "brewery_id": "1019",
+    "name": "Oktoberfest Weizen",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "120",
+    "brewery_id": "1029",
+    "name": "Imperial Hefeweizen",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "121",
+    "brewery_id": "481",
+    "name": "Triple Exultation Old Ale",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "122",
+    "brewery_id": "130",
+    "name": "Organic Gingerbread Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "123",
+    "brewery_id": "1064",
+    "name": "Falcon Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "124",
+    "brewery_id": "441",
+    "name": "Buzzsaw Brown",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "125",
+    "brewery_id": "369",
+    "name": "Eisenbahn South American Pale Ale (S.A.P.A.)",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "126",
+    "brewery_id": "584",
+    "name": "Geist Bock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "127",
+    "brewery_id": "623",
+    "name": "Troll Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "128",
+    "brewery_id": "397",
+    "name": "Dark Ale",
+    "cat_id": "1",
+    "style_id": "10"
+  },
+  {
+    "id": "129",
+    "brewery_id": "441",
+    "name": "Cinder Cone Red",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "130",
+    "brewery_id": "562",
+    "name": "LTD 02 Lager",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "131",
+    "brewery_id": "189",
+    "name": "Saison Vielle Provision",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "132",
+    "brewery_id": "130",
+    "name": "Organic Barley Wine Ale 2005",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "133",
+    "brewery_id": "562",
+    "name": "Old Boardhead 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "134",
+    "brewery_id": "622",
+    "name": "Blue Dot Double India Pale Ale",
+    "cat_id": "3",
+    "style_id": "32"
+  },
+  {
+    "id": "135",
+    "brewery_id": "562",
+    "name": "Nugget",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "136",
+    "brewery_id": "1175",
+    "name": "American Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "137",
+    "brewery_id": "236",
+    "name": "471 Extra ESB",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "138",
+    "brewery_id": "935",
+    "name": "Odell Red Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "139",
+    "brewery_id": "335",
+    "name": "Long Leg English Fuggles Hop Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "140",
+    "brewery_id": "671",
+    "name": "Summer Lightning",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "141",
+    "brewery_id": "255",
+    "name": "Haymaker Extra Pale Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "142",
+    "brewery_id": "447",
+    "name": "Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "143",
+    "brewery_id": "447",
+    "name": "Silk Lady",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "144",
+    "brewery_id": "447",
+    "name": "Danger Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "145",
+    "brewery_id": "447",
+    "name": "Irish Style Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "146",
+    "brewery_id": "1392",
+    "name": "Yeti Special Export",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "147",
+    "brewery_id": "1151",
+    "name": "Steelie Brown Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "148",
+    "brewery_id": "441",
+    "name": "Bond Street 19th Anniversary",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "149",
+    "brewery_id": "1151",
+    "name": "Trumpeter",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "150",
+    "brewery_id": "1264",
+    "name": "Nitro Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "151",
+    "brewery_id": "62",
+    "name": "Fourteen",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "152",
+    "brewery_id": "919",
+    "name": "Old Stock Ale 2007",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "153",
+    "brewery_id": "160",
+    "name": "Cold Hop",
+    "cat_id": "1",
+    "style_id": "2"
+  },
+  {
+    "id": "154",
+    "brewery_id": "742",
+    "name": "Hitachino Nest Espresso Stout",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "155",
+    "brewery_id": "433",
+    "name": "Witte",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "156",
+    "brewery_id": "432",
+    "name": "Slaapmutske Triple Nightcap",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "157",
+    "brewery_id": "723",
+    "name": "Biere de Mars",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "158",
+    "brewery_id": "300",
+    "name": "Kerst Pater Special Christmas Beer",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "159",
+    "brewery_id": "432",
+    "name": "Zoetzuur Flemish Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "160",
+    "brewery_id": "869",
+    "name": "WPA (Wheat Pale Ale)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "161",
+    "brewery_id": "869",
+    "name": "Smoked Hefe",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "162",
+    "brewery_id": "1084",
+    "name": "The Unforgiven Amber Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "163",
+    "brewery_id": "192",
+    "name": "Strange Ghost",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "164",
+    "brewery_id": "595",
+    "name": "Duke IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "165",
+    "brewery_id": "595",
+    "name": "Broad Axe Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "166",
+    "brewery_id": "595",
+    "name": "Northern Light Lager",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "167",
+    "brewery_id": "31",
+    "name": "Podge Belgian Imperial Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "168",
+    "brewery_id": "307",
+    "name": "Okocim Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "169",
+    "brewery_id": "458",
+    "name": "1809",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "170",
+    "brewery_id": "433",
+    "name": "Pannepot",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "171",
+    "brewery_id": "604",
+    "name": "Samurai",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "172",
+    "brewery_id": "122",
+    "name": "Crystal Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "173",
+    "brewery_id": "177",
+    "name": "Gavroche French Red Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "174",
+    "brewery_id": "1138",
+    "name": "Coney Island Lager",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "175",
+    "brewery_id": "191",
+    "name": "La BiÃ¨re des Collines van de Saisis",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "176",
+    "brewery_id": "211",
+    "name": "Dark Beer / StiftsbrÃ¤u",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "177",
+    "brewery_id": "723",
+    "name": "LuciÃ©rnaga",
+    "cat_id": "5",
+    "style_id": "64"
+  },
+  {
+    "id": "178",
+    "brewery_id": "202",
+    "name": "CuvÃ©e des Champions 2003-2004",
+    "cat_id": "5",
+    "style_id": "70"
+  },
+  {
+    "id": "179",
+    "brewery_id": "859",
+    "name": "Beer Geek Breakfast",
+    "cat_id": "3",
+    "style_id": "43"
+  },
+  {
+    "id": "180",
+    "brewery_id": "432",
+    "name": "Flemish Primitive Wild Ale (Spoon Whacker)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "181",
+    "brewery_id": "39",
+    "name": "Bock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "182",
+    "brewery_id": "810",
+    "name": "Double India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "183",
+    "brewery_id": "984",
+    "name": "Old Bawdy 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "184",
+    "brewery_id": "397",
+    "name": "Extra Strong Vintage Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "185",
+    "brewery_id": "481",
+    "name": "Certified Organic India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "186",
+    "brewery_id": "481",
+    "name": "Certified Organic Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "187",
+    "brewery_id": "481",
+    "name": "Certified Organic Extra Pale Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "188",
+    "brewery_id": "481",
+    "name": "Certified Organic Amber Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "189",
+    "brewery_id": "706",
+    "name": "Farm House Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "190",
+    "brewery_id": "255",
+    "name": "Beer Town Brown",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "191",
+    "brewery_id": "890",
+    "name": "Tanners Jack",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "192",
+    "brewery_id": "62",
+    "name": "Mephistopheles Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "193",
+    "brewery_id": "923",
+    "name": "NÃ¸gne Ã˜ Brown Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "194",
+    "brewery_id": "1204",
+    "name": "Vertical Epic 07.07.07",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "195",
+    "brewery_id": "1136",
+    "name": "Ringwood Brewery Old Thumper Extra Special Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "196",
+    "brewery_id": "1136",
+    "name": "Export Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "197",
+    "brewery_id": "950",
+    "name": "Bourbon Barrel Porter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "198",
+    "brewery_id": "1204",
+    "name": "Old Guardian Barley Wine 2007",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "199",
+    "brewery_id": "892",
+    "name": "White Christmas",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "200",
+    "brewery_id": "175",
+    "name": "Winter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "201",
+    "brewery_id": "765",
+    "name": "Undercover Investigation Shut-Down Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "202",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2006",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "203",
+    "brewery_id": "202",
+    "name": "Classic Gueuze",
+    "cat_id": "5",
+    "style_id": "70"
+  },
+  {
+    "id": "204",
+    "brewery_id": "1315",
+    "name": "Gueuze-Lambic",
+    "cat_id": "5",
+    "style_id": "70"
+  },
+  {
+    "id": "205",
+    "brewery_id": "484",
+    "name": "Schwarzbier / Dunkel",
+    "cat_id": "7",
+    "style_id": "86"
+  },
+  {
+    "id": "206",
+    "brewery_id": "779",
+    "name": "Sawtooth Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "207",
+    "brewery_id": "779",
+    "name": "Pole Star Pilsner",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "208",
+    "brewery_id": "935",
+    "name": "90 Shilling",
+    "cat_id": "1",
+    "style_id": "7"
+  },
+  {
+    "id": "209",
+    "brewery_id": "905",
+    "name": "Sunshine Wheat",
+    "cat_id": "11",
+    "style_id": "116"
+  },
+  {
+    "id": "210",
+    "brewery_id": "174",
+    "name": "Grand Cru",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "211",
+    "brewery_id": "70",
+    "name": "Der Weisse Bock",
+    "cat_id": "4",
+    "style_id": "55"
+  },
+  {
+    "id": "212",
+    "brewery_id": "176",
+    "name": "Stouterik / The Brussels Stout",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "213",
+    "brewery_id": "779",
+    "name": "Black Jack Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "214",
+    "brewery_id": "161",
+    "name": "Lunar Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "215",
+    "brewery_id": "604",
+    "name": "Denver Pale Ale / DPA",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "216",
+    "brewery_id": "296",
+    "name": "Grotten Flemish Ale",
+    "cat_id": "5",
+    "style_id": "72"
+  },
+  {
+    "id": "217",
+    "brewery_id": "1316",
+    "name": "Grand Cru",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "218",
+    "brewery_id": "501",
+    "name": "Summer Common",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "219",
+    "brewery_id": "1185",
+    "name": "Golden Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "220",
+    "brewery_id": "174",
+    "name": "Ambree",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "221",
+    "brewery_id": "296",
+    "name": "Pater 6",
+    "cat_id": "5",
+    "style_id": "60"
+  },
+  {
+    "id": "222",
+    "brewery_id": "187",
+    "name": "Blanche de Namur",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "223",
+    "brewery_id": "905",
+    "name": "Skinny Dip",
+    "cat_id": "3",
+    "style_id": "37"
+  },
+  {
+    "id": "224",
+    "brewery_id": "174",
+    "name": "Blanche Double",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "225",
+    "brewery_id": "236",
+    "name": "Summer Bright Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "226",
+    "brewery_id": "905",
+    "name": "Mothership Wit",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "227",
+    "brewery_id": "696",
+    "name": "Lia Fail Stone of Destiny Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "228",
+    "brewery_id": "395",
+    "name": "Premium XB Bluebird Bitter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "229",
+    "brewery_id": "1056",
+    "name": "IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "230",
+    "brewery_id": "167",
+    "name": "Houblon",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "231",
+    "brewery_id": "935",
+    "name": "Double Pilsner",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "232",
+    "brewery_id": "708",
+    "name": "Creamy Dark",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "233",
+    "brewery_id": "757",
+    "name": "Premium Pils Edelherb",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "234",
+    "brewery_id": "590",
+    "name": "StÃ¼venbrÃ¤u Maibock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "235",
+    "brewery_id": "590",
+    "name": "Jack of Spades Schwarzbier",
+    "cat_id": "7",
+    "style_id": "86"
+  },
+  {
+    "id": "236",
+    "brewery_id": "1179",
+    "name": "Shiner Hefeweizen",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "237",
+    "brewery_id": "1154",
+    "name": "Sapporo Premium Beer",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "238",
+    "brewery_id": "501",
+    "name": "Dark German Lager",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "239",
+    "brewery_id": "44",
+    "name": "Spring Heat Spiced Wheat",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "240",
+    "brewery_id": "567",
+    "name": "Gose",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "241",
+    "brewery_id": "1176",
+    "name": "Pils",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "242",
+    "brewery_id": "1274",
+    "name": "New",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "243",
+    "brewery_id": "369",
+    "name": "Eisenbahn Defumada",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "244",
+    "brewery_id": "369",
+    "name": "Eisenbahn Escura",
+    "cat_id": "7",
+    "style_id": "86"
+  },
+  {
+    "id": "245",
+    "brewery_id": "369",
+    "name": "Eisenbahn Dourada",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "246",
+    "brewery_id": "501",
+    "name": "Fallen Angel Sweet Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "247",
+    "brewery_id": "604",
+    "name": "Hot Shot ESB",
+    "cat_id": "1",
+    "style_id": "5"
+  },
+  {
+    "id": "248",
+    "brewery_id": "312",
+    "name": "Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "249",
+    "brewery_id": "923",
+    "name": "NÃ¸gne Ã˜ Imperial Stout",
+    "cat_id": "3",
+    "style_id": "43"
+  },
+  {
+    "id": "250",
+    "brewery_id": "923",
+    "name": "NÃ¸gne Ã˜ Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "251",
+    "brewery_id": "923",
+    "name": "NÃ¸gne Ã˜ Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "252",
+    "brewery_id": "501",
+    "name": "Eccentric Belgian Wheat",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "253",
+    "brewery_id": "1265",
+    "name": "Oatmeal Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "254",
+    "brewery_id": "1265",
+    "name": "Amber Light",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "255",
+    "brewery_id": "1265",
+    "name": "New World Wheat",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "256",
+    "brewery_id": "1265",
+    "name": "Maibock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "257",
+    "brewery_id": "1265",
+    "name": "Ironwood Dark",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "258",
+    "brewery_id": "1265",
+    "name": "Cascade Amber",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "259",
+    "brewery_id": "1265",
+    "name": "Alpine Gold",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "260",
+    "brewery_id": "624",
+    "name": "Illuminator Doppelbock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "261",
+    "brewery_id": "624",
+    "name": "Old Princeton Landing IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "262",
+    "brewery_id": "624",
+    "name": "Paddle Out Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "263",
+    "brewery_id": "624",
+    "name": "Pillar Point Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "264",
+    "brewery_id": "624",
+    "name": "Sandy Beach Blonde Hefeweizen",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "265",
+    "brewery_id": "624",
+    "name": "Mavericks Amber Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "266",
+    "brewery_id": "624",
+    "name": "Harbor Light Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "267",
+    "brewery_id": "1126",
+    "name": "Leroy Barleywine",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "268",
+    "brewery_id": "1126",
+    "name": "Oatmeal Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "269",
+    "brewery_id": "1126",
+    "name": "Amber",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "270",
+    "brewery_id": "1126",
+    "name": "Blur IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "271",
+    "brewery_id": "1126",
+    "name": "Pelican Pale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "272",
+    "brewery_id": "1126",
+    "name": "Brew Ribbon",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "273",
+    "brewery_id": "701",
+    "name": "Casey Jones Imperial IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "274",
+    "brewery_id": "701",
+    "name": "Fairfax Coffee Porter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "275",
+    "brewery_id": "701",
+    "name": "Epiphany Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "276",
+    "brewery_id": "701",
+    "name": "IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "277",
+    "brewery_id": "701",
+    "name": "Chazz Cat Rye",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "278",
+    "brewery_id": "701",
+    "name": "Shining Star Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "279",
+    "brewery_id": "701",
+    "name": "Honey Bunny Blonde Ale",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "280",
+    "brewery_id": "701",
+    "name": "Kent Lake Kolsch",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "281",
+    "brewery_id": "892",
+    "name": "Old Blarney Barleywine",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "282",
+    "brewery_id": "892",
+    "name": "Irish Dry Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "283",
+    "brewery_id": "892",
+    "name": "Kilt Lifter Scottish Ale",
+    "cat_id": "1",
+    "style_id": "15"
+  },
+  {
+    "id": "284",
+    "brewery_id": "892",
+    "name": "India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "285",
+    "brewery_id": "588",
+    "name": "Blonde Bock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "286",
+    "brewery_id": "588",
+    "name": "Schwarzbier",
+    "cat_id": "7",
+    "style_id": "86"
+  },
+  {
+    "id": "287",
+    "brewery_id": "588",
+    "name": "Czech Lager",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "288",
+    "brewery_id": "385",
+    "name": "Yule Tide",
+    "cat_id": "5",
+    "style_id": "61"
+  },
+  {
+    "id": "289",
+    "brewery_id": "588",
+    "name": "Pilsner",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "290",
+    "brewery_id": "308",
+    "name": "Warka Strong",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "291",
+    "brewery_id": "1074",
+    "name": "Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "292",
+    "brewery_id": "1074",
+    "name": "ESB",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "293",
+    "brewery_id": "1074",
+    "name": "Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "294",
+    "brewery_id": "1074",
+    "name": "Kristall Weizen",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "295",
+    "brewery_id": "1163",
+    "name": "ESB (Extra Special Blizzard)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "296",
+    "brewery_id": "677",
+    "name": "Paint the Town Red",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "297",
+    "brewery_id": "677",
+    "name": "Golden Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "298",
+    "brewery_id": "1004",
+    "name": "Train Wreck IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "299",
+    "brewery_id": "1004",
+    "name": "Zone 7 Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "300",
+    "brewery_id": "1004",
+    "name": "Pleasanton Pale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "301",
+    "brewery_id": "1004",
+    "name": "Island Wheat",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "302",
+    "brewery_id": "707",
+    "name": "Hefeweizen",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "303",
+    "brewery_id": "707",
+    "name": "Red Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "304",
+    "brewery_id": "707",
+    "name": "Penalty Shot Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "305",
+    "brewery_id": "707",
+    "name": "India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "306",
+    "brewery_id": "707",
+    "name": "Grid Iron Amber Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "307",
+    "brewery_id": "707",
+    "name": "Boys of Summer Wheat",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "308",
+    "brewery_id": "523",
+    "name": "Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "309",
+    "brewery_id": "523",
+    "name": "Red Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "310",
+    "brewery_id": "523",
+    "name": "Hefeweizen",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "311",
+    "brewery_id": "523",
+    "name": "Bitter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "312",
+    "brewery_id": "523",
+    "name": "Double IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "313",
+    "brewery_id": "133",
+    "name": "Tatonka Stout",
+    "cat_id": "3",
+    "style_id": "43"
+  },
+  {
+    "id": "314",
+    "brewery_id": "133",
+    "name": "P.M. Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "315",
+    "brewery_id": "133",
+    "name": "Jeremiah Red",
+    "cat_id": "2",
+    "style_id": "22"
+  },
+  {
+    "id": "316",
+    "brewery_id": "133",
+    "name": "Piranha Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "317",
+    "brewery_id": "133",
+    "name": "Harvest Hefeweizen",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "318",
+    "brewery_id": "133",
+    "name": "Brewhouse Blonde",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "319",
+    "brewery_id": "133",
+    "name": "Nutty Brewnette",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "320",
+    "brewery_id": "515",
+    "name": "India Pale Ale (IPA)",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "321",
+    "brewery_id": "515",
+    "name": "Belgian Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "322",
+    "brewery_id": "515",
+    "name": "Belgian Abbey",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "323",
+    "brewery_id": "515",
+    "name": "Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "324",
+    "brewery_id": "515",
+    "name": "Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "325",
+    "brewery_id": "515",
+    "name": "Best Bitter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "326",
+    "brewery_id": "515",
+    "name": "Hefe Weizen",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "327",
+    "brewery_id": "515",
+    "name": "Pilsner",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "328",
+    "brewery_id": "515",
+    "name": "KÃ¶lsch",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "329",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2005 (Whisky)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "330",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2005 (Calvados)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "331",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2005 (Sherry)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "332",
+    "brewery_id": "1072",
+    "name": "Old Crustacean Barleywine 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "333",
+    "brewery_id": "236",
+    "name": "Avalanche Amber",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "334",
+    "brewery_id": "236",
+    "name": "Hefe Proper Ale",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "335",
+    "brewery_id": "935",
+    "name": "Levity Amber Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "336",
+    "brewery_id": "935",
+    "name": "Easy Street Wheat",
+    "cat_id": "11",
+    "style_id": "116"
+  },
+  {
+    "id": "337",
+    "brewery_id": "161",
+    "name": "Boulevard Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "338",
+    "brewery_id": "161",
+    "name": "Bully! Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "339",
+    "brewery_id": "795",
+    "name": "Bovine Belgian Winter Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "340",
+    "brewery_id": "795",
+    "name": "XX Black Angus Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "341",
+    "brewery_id": "795",
+    "name": "Blarney Stone Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "342",
+    "brewery_id": "795",
+    "name": "Bison Brown Ale",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "343",
+    "brewery_id": "795",
+    "name": "Prairie Pale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "344",
+    "brewery_id": "795",
+    "name": "Wildcat Wheat",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "345",
+    "brewery_id": "161",
+    "name": "Boulevard Dry Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "346",
+    "brewery_id": "160",
+    "name": "Planet Porter / Boulder Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "347",
+    "brewery_id": "195",
+    "name": "Amber",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "348",
+    "brewery_id": "187",
+    "name": "Blanche des Moines",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "349",
+    "brewery_id": "187",
+    "name": "Triple Moine",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "350",
+    "brewery_id": "272",
+    "name": "Arabier",
+    "cat_id": "5",
+    "style_id": "65"
+  },
+  {
+    "id": "351",
+    "brewery_id": "272",
+    "name": "Bos Keun",
+    "cat_id": "5",
+    "style_id": "65"
+  },
+  {
+    "id": "352",
+    "brewery_id": "175",
+    "name": "Grand Cru",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "353",
+    "brewery_id": "272",
+    "name": "Oerbier",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "354",
+    "brewery_id": "272",
+    "name": "Dulle Teve / Mad Bitch",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "355",
+    "brewery_id": "278",
+    "name": "Vuuve",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "356",
+    "brewery_id": "284",
+    "name": "Gouden Carolus Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "357",
+    "brewery_id": "284",
+    "name": "Gouden Carolus Ambrio 1471",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "358",
+    "brewery_id": "269",
+    "name": "Pauwel Kwak",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "359",
+    "brewery_id": "285",
+    "name": "Delirium NoÃ«l",
+    "cat_id": "5",
+    "style_id": "72"
+  },
+  {
+    "id": "360",
+    "brewery_id": "7",
+    "name": "Rochefort 10",
+    "cat_id": "5",
+    "style_id": "62"
+  },
+  {
+    "id": "361",
+    "brewery_id": "167",
+    "name": "McChouffe",
+    "cat_id": "3",
+    "style_id": "29"
+  },
+  {
+    "id": "362",
+    "brewery_id": "236",
+    "name": "471 Double IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "363",
+    "brewery_id": "167",
+    "name": "La Chouffe Golden Ale",
+    "cat_id": "5",
+    "style_id": "65"
+  },
+  {
+    "id": "364",
+    "brewery_id": "184",
+    "name": "Saison Voisin",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "365",
+    "brewery_id": "322",
+    "name": "Olde Expensive Ale",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "366",
+    "brewery_id": "110",
+    "name": "Quadrupel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "367",
+    "brewery_id": "110",
+    "name": "Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "368",
+    "brewery_id": "110",
+    "name": "Dubbel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "369",
+    "brewery_id": "903",
+    "name": "Old Growler",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "370",
+    "brewery_id": "431",
+    "name": "Urthel Vlaemse Bock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "371",
+    "brewery_id": "296",
+    "name": "Watou Tripel",
+    "cat_id": "5",
+    "style_id": "61"
+  },
+  {
+    "id": "372",
+    "brewery_id": "586",
+    "name": "Matilda",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "373",
+    "brewery_id": "638",
+    "name": "Old Engine Oil Special Reserve (aged in malt whisky casks)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "374",
+    "brewery_id": "935",
+    "name": "Imperial Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "375",
+    "brewery_id": "757",
+    "name": "EKU 28",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "376",
+    "brewery_id": "757",
+    "name": "Eisbock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "377",
+    "brewery_id": "1115",
+    "name": "Doppelbock Dunkel",
+    "cat_id": "7",
+    "style_id": "92"
+  },
+  {
+    "id": "378",
+    "brewery_id": "1385",
+    "name": "Special London Ale",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "379",
+    "brewery_id": "1385",
+    "name": "Oatmeal Stout",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "380",
+    "brewery_id": "128",
+    "name": "Super",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "381",
+    "brewery_id": "128",
+    "name": "Wayan",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "382",
+    "brewery_id": "160",
+    "name": "GABF 25th Year Beer",
+    "cat_id": "1",
+    "style_id": "5"
+  },
+  {
+    "id": "383",
+    "brewery_id": "39",
+    "name": "Old Foghorn 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "384",
+    "brewery_id": "21",
+    "name": "Grand Cru 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "385",
+    "brewery_id": "363",
+    "name": "Cerveza Negra",
+    "cat_id": "3",
+    "style_id": "42"
+  },
+  {
+    "id": "386",
+    "brewery_id": "363",
+    "name": "Cerveza Diablo",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "387",
+    "brewery_id": "363",
+    "name": "Cerveza Roja",
+    "cat_id": "7",
+    "style_id": "84"
+  },
+  {
+    "id": "388",
+    "brewery_id": "300",
+    "name": "Buffalo Belgian Stout",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "389",
+    "brewery_id": "238",
+    "name": "Rader AmbrÃ©e",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "390",
+    "brewery_id": "238",
+    "name": "Rader Blonde",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "391",
+    "brewery_id": "626",
+    "name": "Toleration",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "392",
+    "brewery_id": "1185",
+    "name": "English Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "393",
+    "brewery_id": "425",
+    "name": "Ripon Jewel Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "394",
+    "brewery_id": "200",
+    "name": "XTra",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "395",
+    "brewery_id": "723",
+    "name": "Bam BiÃ¨re",
+    "cat_id": "5",
+    "style_id": "74"
+  },
+  {
+    "id": "396",
+    "brewery_id": "1115",
+    "name": "Samichlaus Bier 2005",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "397",
+    "brewery_id": "609",
+    "name": "Barleywine",
+    "cat_id": "3",
+    "style_id": "35"
+  },
+  {
+    "id": "398",
+    "brewery_id": "1177",
+    "name": "Old Godfather",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "399",
+    "brewery_id": "1023",
+    "name": "Aventinus Weizen-Eisbock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "400",
+    "brewery_id": "1023",
+    "name": "Aventinus Weizenstarkbier / Doppel Weizen Bock",
+    "cat_id": "4",
+    "style_id": "55"
+  },
+  {
+    "id": "401",
+    "brewery_id": "905",
+    "name": "New Belgium Trippel Belgian Style Ale",
+    "cat_id": "5",
+    "style_id": "61"
+  },
+  {
+    "id": "402",
+    "brewery_id": "249",
+    "name": "Hennepin Farmhouse Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "403",
+    "brewery_id": "905",
+    "name": "Abbey Belgian Style Ale",
+    "cat_id": "5",
+    "style_id": "60"
+  },
+  {
+    "id": "404",
+    "brewery_id": "1142",
+    "name": "India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "405",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "406",
+    "brewery_id": "1054",
+    "name": "Iron Fist Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "407",
+    "brewery_id": "586",
+    "name": "Demolition",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "408",
+    "brewery_id": "723",
+    "name": "Oro de Calabaza",
+    "cat_id": "5",
+    "style_id": "65"
+  },
+  {
+    "id": "409",
+    "brewery_id": "723",
+    "name": "La Roja",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "410",
+    "brewery_id": "919",
+    "name": "Brother Thelonious",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "411",
+    "brewery_id": "441",
+    "name": "Hop Trip Fresh Hop Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "412",
+    "brewery_id": "130",
+    "name": "Organic Belgian Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "413",
+    "brewery_id": "1192",
+    "name": "Nieuw Ligt Grand Cru 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "414",
+    "brewery_id": "604",
+    "name": "Hibernation Ale",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "415",
+    "brewery_id": "623",
+    "name": "Wee Heavy Winter Ale",
+    "cat_id": "1",
+    "style_id": "15"
+  },
+  {
+    "id": "416",
+    "brewery_id": "905",
+    "name": "2Â° Below",
+    "cat_id": "1",
+    "style_id": "5"
+  },
+  {
+    "id": "417",
+    "brewery_id": "425",
+    "name": "Monkey Wrench Dark Ale",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "418",
+    "brewery_id": "425",
+    "name": "Old Legover",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "419",
+    "brewery_id": "604",
+    "name": "Hercules Double IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "420",
+    "brewery_id": "604",
+    "name": "Fresh Hop Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "421",
+    "brewery_id": "98",
+    "name": "Twisted Thistle India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "422",
+    "brewery_id": "1315",
+    "name": "Espresso Stout",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "423",
+    "brewery_id": "441",
+    "name": "Inversion IPA",
+    "cat_id": "3",
+    "style_id": "31"
+  },
+  {
+    "id": "424",
+    "brewery_id": "844",
+    "name": "India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "425",
+    "brewery_id": "844",
+    "name": "London Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "426",
+    "brewery_id": "742",
+    "name": "Hitachino Nest Celebration Ale 2006",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "427",
+    "brewery_id": "363",
+    "name": "Rubia",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "428",
+    "brewery_id": "562",
+    "name": "Session Premium Lager",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "429",
+    "brewery_id": "156",
+    "name": "Mocny BOSS / BOSS Beer",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "430",
+    "brewery_id": "127",
+    "name": "La Rossa",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "431",
+    "brewery_id": "905",
+    "name": "Blue Paddle Pilsener",
+    "cat_id": "7",
+    "style_id": "77"
+  },
+  {
+    "id": "432",
+    "brewery_id": "367",
+    "name": "Lager",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "433",
+    "brewery_id": "70",
+    "name": "Hell",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "434",
+    "brewery_id": "70",
+    "name": "Pilsner",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "435",
+    "brewery_id": "70",
+    "name": "Ungespundet Lager Hefetrub",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "436",
+    "brewery_id": "1188",
+    "name": "Keller-Bier",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "437",
+    "brewery_id": "1264",
+    "name": "Imperial Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "438",
+    "brewery_id": "1264",
+    "name": "Amber Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "439",
+    "brewery_id": "905",
+    "name": "La Folie",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "440",
+    "brewery_id": "296",
+    "name": "Abt 12",
+    "cat_id": "5",
+    "style_id": "62"
+  },
+  {
+    "id": "441",
+    "brewery_id": "195",
+    "name": "Nostradamus",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "442",
+    "brewery_id": "175",
+    "name": "Triple",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "443",
+    "brewery_id": "168",
+    "name": "Ultrabrune",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "444",
+    "brewery_id": "277",
+    "name": "PÃ¨re NoÃ«l",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "445",
+    "brewery_id": "1375",
+    "name": "Bah Humbug",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "446",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2005 (Port)",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "447",
+    "brewery_id": "727",
+    "name": "Harvest Ale 2005",
+    "cat_id": "1",
+    "style_id": "13"
+  },
+  {
+    "id": "448",
+    "brewery_id": "727",
+    "name": "Moonraker",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "449",
+    "brewery_id": "638",
+    "name": "Old Engine Oil",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "450",
+    "brewery_id": "1043",
+    "name": "Pitchfork Rebellious Bitter",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "451",
+    "brewery_id": "638",
+    "name": "Bitter and Twisted",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "452",
+    "brewery_id": "1185",
+    "name": "India Pale Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "453",
+    "brewery_id": "1043",
+    "name": "Old Slug Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "454",
+    "brewery_id": "744",
+    "name": "Golden Abbot Lager",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "455",
+    "brewery_id": "744",
+    "name": "Porter",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "456",
+    "brewery_id": "757",
+    "name": "MÃ¶nchshof KellerbrÃ¤u",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "457",
+    "brewery_id": "626",
+    "name": "Nightmare",
+    "cat_id": "2",
+    "style_id": "25"
+  },
+  {
+    "id": "458",
+    "brewery_id": "205",
+    "name": "Ur-Weisse",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "459",
+    "brewery_id": "650",
+    "name": "Schlenkerla Helles Lagerbier",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "460",
+    "brewery_id": "743",
+    "name": "Ondineke Oilsjtersen Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "461",
+    "brewery_id": "1043",
+    "name": "Ale Mary",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "462",
+    "brewery_id": "743",
+    "name": "Jan de Lichte",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "463",
+    "brewery_id": "1142",
+    "name": "Bigfoot 2000",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "464",
+    "brewery_id": "222",
+    "name": "Rauchbier Lager",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "465",
+    "brewery_id": "14",
+    "name": "Bourbon Imperial Stout",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "466",
+    "brewery_id": "14",
+    "name": "Witbier",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "467",
+    "brewery_id": "14",
+    "name": "Bavarian Bock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "468",
+    "brewery_id": "14",
+    "name": "Heater",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "469",
+    "brewery_id": "14",
+    "name": "Harvest Brown",
+    "cat_id": "3",
+    "style_id": "38"
+  },
+  {
+    "id": "470",
+    "brewery_id": "14",
+    "name": "Brout",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "471",
+    "brewery_id": "650",
+    "name": "Aecht Schlenkerla Rauchbier MÃ¤rzen",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "472",
+    "brewery_id": "650",
+    "name": "Aecht Schlenkerla Rauchbier Weizen",
+    "cat_id": "8",
+    "style_id": "95"
+  },
+  {
+    "id": "473",
+    "brewery_id": "757",
+    "name": "Kapuziner Schwarz-Weizen",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "474",
+    "brewery_id": "70",
+    "name": "Christmas Bock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "475",
+    "brewery_id": "296",
+    "name": "Prior 8",
+    "cat_id": "5",
+    "style_id": "60"
+  },
+  {
+    "id": "476",
+    "brewery_id": "395",
+    "name": "Old Man Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "477",
+    "brewery_id": "1056",
+    "name": "Criminally Bad Elf",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "478",
+    "brewery_id": "1056",
+    "name": "Very Bad Elf Special Reserve Ale",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "479",
+    "brewery_id": "70",
+    "name": "Weisse",
+    "cat_id": "4",
+    "style_id": "50"
+  },
+  {
+    "id": "480",
+    "brewery_id": "757",
+    "name": "MÃ¶nchshof Premium Schwarzbier",
+    "cat_id": "7",
+    "style_id": "86"
+  },
+  {
+    "id": "481",
+    "brewery_id": "296",
+    "name": "St. Bernardus Tripel",
+    "cat_id": "5",
+    "style_id": "61"
+  },
+  {
+    "id": "482",
+    "brewery_id": "296",
+    "name": "BiÃ¨re Blanche",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "483",
+    "brewery_id": "1375",
+    "name": "Wychcraft",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "484",
+    "brewery_id": "1204",
+    "name": "Double Bastard Ale",
+    "cat_id": "3",
+    "style_id": "26"
+  },
+  {
+    "id": "485",
+    "brewery_id": "7",
+    "name": "Rochefort 6",
+    "cat_id": "3",
+    "style_id": "29"
+  },
+  {
+    "id": "486",
+    "brewery_id": "277",
+    "name": "Guldenberg",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "487",
+    "brewery_id": "262",
+    "name": "Westmalle Trappist Tripel",
+    "cat_id": "5",
+    "style_id": "61"
+  },
+  {
+    "id": "488",
+    "brewery_id": "590",
+    "name": "Fire in the Hole!",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "489",
+    "brewery_id": "590",
+    "name": "Cow Palace Scotch Ale",
+    "cat_id": "1",
+    "style_id": "15"
+  },
+  {
+    "id": "490",
+    "brewery_id": "590",
+    "name": "Toil & Trubbel Dubbel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "491",
+    "brewery_id": "590",
+    "name": "Abtskelder Tripel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "492",
+    "brewery_id": "590",
+    "name": "All-American Gold",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "493",
+    "brewery_id": "511",
+    "name": "Curator Dunkler Doppelbock",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "494",
+    "brewery_id": "511",
+    "name": "Kloster Dunkel",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "495",
+    "brewery_id": "511",
+    "name": "Kloster Edel-Hell",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "496",
+    "brewery_id": "594",
+    "name": "Teton Ale",
+    "cat_id": "3",
+    "style_id": "33"
+  },
+  {
+    "id": "497",
+    "brewery_id": "534",
+    "name": "Pilsener",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "498",
+    "brewery_id": "230",
+    "name": "Nickelbier",
+    "cat_id": "7",
+    "style_id": "90"
+  },
+  {
+    "id": "499",
+    "brewery_id": "216",
+    "name": "Edel-Pils",
+    "cat_id": "-1",
+    "style_id": "-1"
+  },
+  {
+    "id": "500",
+    "brewery_id": "845",
+    "name": "Weiss-Gold",
+    "cat_id": "-1",
+    "style_id": "-1"
+  }
+]
