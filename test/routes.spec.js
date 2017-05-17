@@ -2,8 +2,6 @@ const chai = require('chai');
 const should = chai.should();
 const chaiHttp = require('chai-http');
 
-process.env.NODE_ENV = 'test';
-
 const configuration = require('../knexfile')['test'];
 const database = require('knex')(configuration);
 const server = require('../server/index');
