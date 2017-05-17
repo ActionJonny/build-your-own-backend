@@ -175,7 +175,7 @@ describe('API Routes', () => {
 
     it('should throw an error on a failed GET to /breweries', (done) => {
       chai.request(server)
-      .get('/api/v1/breweriesssss')
+      .get('/api/v2/breweriesssss')
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -203,11 +203,36 @@ describe('API Routes', () => {
 
     it('should throw an error on a failed GET to /beers', (done) => {
       chai.request(server)
-      .get('/api/v1/beersssss')
+      .get('/api/v2/beersssss')
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
         response.body.should.deep.equal({ error: 'Not Found' });
+        done();
+      });
+    });
+  });
+
+  describe('GET /api/v2/beers/QUERY', () => {
+    it('should return a json object of beers for a selected beer category', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers?category=British%20Ale')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(25);
+        response.body[0].cat_id.should.equal('1');
+        done();
+      });
+    });
+
+    it('should throw an error on a failed GET to /beers/QUERY', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers?category=No%20Beer%20Here')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'No beers found for that category' });
         done();
       });
     });
