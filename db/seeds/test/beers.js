@@ -21,7 +21,9 @@ const beerStyles = (knex) => {
 
 const beersJSON = (knex) => {
   return beers.map((beer) => {
-    const { id, name, cat_id, style_id, brewery_id } = beer;
+    const { id, name, brewery_id } = beer;
+    const style_id = beer.style_id === null ? beer.style_id : parseInt(beer.style_id, 10);
+    const cat_id = beer.cat_id === null ? beer.cat_id : parseInt(beer.cat_id, 10);
     return knex('beers').insert({ id, name, cat_id, style_id, brewery_id: parseInt(brewery_id, 10) });
   });
 };
