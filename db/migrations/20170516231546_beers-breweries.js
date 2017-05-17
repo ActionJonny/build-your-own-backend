@@ -16,8 +16,12 @@ exports.up = function(knex, Promise) {
     knex.schema.createTable('beers', (table) => {
       table.increments('id').primary();
       table.string('name');
-      table.string('cat_id');
-      table.string('style_id');
+      table.integer('cat_id').unsigned();
+      table.foreign('cat_id')
+        .references('categories.id');
+      table.integer('style_id').unsigned();
+      table.foreign('style_id')
+        .references('styles.id');
       table.integer('brewery_id').unsigned();
       table.foreign('brewery_id')
         .references('breweries.id');
