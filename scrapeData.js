@@ -36,8 +36,8 @@ const filterBreweries = (json) => {
 const filterBeers = (json) => {
   return json.reduce((array, beer) => {
     const { id, brewery_id, name } = beer
-    let cat_id = beer.cat_id === '-1' ? null : beer.cat_id;
-    let style_id = beer.style_id === '-1' ? null : beer.style_id;
+    const cat_id = beer.cat_id === '-1' ? null : beer.cat_id;
+    const style_id = beer.style_id === '-1' ? null : beer.style_id;
     const newBeer = {
       id,
       brewery_id,
