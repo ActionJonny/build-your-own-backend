@@ -5,6 +5,8 @@ const morgan = require('morgan');
 
 const categories = require('./categories');
 const styles = require('./styles');
+const breweries = require('./breweries');
+const beers = require('./beers');
 
 app.use(bodyParser.json());
 app.use(morgan('dev'));
@@ -13,6 +15,8 @@ app.set('port', process.env.PORT || 3000);
 
 app.use('/api/v1', categories);
 app.use('/api/v1', styles);
+app.use('/api/v2', breweries);
+app.use('/api/v2', beers);
 
 app.get('/*', (request, response) => {
   response.status(404).send({ error: 'Not Found' });
