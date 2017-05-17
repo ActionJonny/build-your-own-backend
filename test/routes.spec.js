@@ -79,7 +79,56 @@ describe('API Routes', () => {
         done();
       });
     });
+  });
 
+  describe('GET /api/v1/categories/:id', () => {
+    it('should return a single object when supplied with a valid category ID', (done) => {
+      chai.request(server)
+      .get('/api/v1/categories/5')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(1);
+        response.body[0].name.should.equal('Belgian and French Ale');
+        done();
+      });
+    });
+
+    it('should return an error if a category can not be found', (done) => {
+      chai.request(server)
+      .get('/api/v1/categories/500')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Category does not exist' });
+        done();
+      });
+    });
+  });
+
+  describe('GET /api/v1/styles/:id', () => {
+    it('should return a single object when supplied with a valid style ID', (done) => {
+      chai.request(server)
+      .get('/api/v1/styles/50')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.json;
+        response.body.length.should.equal(1);
+        response.body[0].name.should.equal('South German-Style Hefeweizen');
+        done();
+      });
+    });
+
+    it('should return an error if a style can not be found', (done) => {
+      chai.request(server)
+      .get('/api/v1/styles/5000')
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Style does not exist' });
+        done();
+      });
+    });
   });
 
 });
