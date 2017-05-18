@@ -471,4 +471,38 @@ describe('API Routes', () => {
     });
   });
 
+  describe('DELETE /api/v1/categories/:id', () => {
+    it('should be able to DELETE a specific category', (done) => {
+      chai.request(server)
+      .get('/api/v1/categories')
+      .set('Authorization', process.env.TOKEN)
+      .end((err, response) => {
+        response.body.length.should.equal(11);
+        chai.request(server)
+        .delete('/api/v1/categories/11')
+        .set('Authorization', process.env.TOKEN)
+        .end((err, response) => {
+          response.should.have.status(204);
+          chai.request(server)
+          .get('/api/v1/categories')
+          .set('Authorization', process.env.TOKEN)
+          .end((err, response) => {
+            response.body.length.should.equal(10);
+            done();
+          });
+        });
+      });
+    });
+  });
+
+  it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
+    chai.request(server)
+    .delete('/api/v1/categories/')
+    .set('Authorization', process.env.TOKEN)
+    .end((err, response) => {
+      response.should.have.status(404);
+      done();
+    });
+  });
+
 });
