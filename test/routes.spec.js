@@ -231,7 +231,8 @@ describe('API Routes', () => {
   describe('GET /api/v2/beers/QUERY', () => {
     it('should return a json object of beers for a selected beer category', (done) => {
       chai.request(server)
-      .get('/api/v2/beers?category=British%20Ale')
+      .get('/api/v2/beers')
+      .query({ category: 'British Ale' })
       .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
@@ -244,7 +245,8 @@ describe('API Routes', () => {
 
     it('should throw an error on a failed GET to /beers/QUERY for category', (done) => {
       chai.request(server)
-      .get('/api/v2/beers?category=No%20Beer%20Here')
+      .get('/api/v2/beers')
+      .query({ category: 'No Beer Here' })
       .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
@@ -256,7 +258,8 @@ describe('API Routes', () => {
 
     it('should return a json object of beers for a selected beer style', (done) => {
       chai.request(server)
-      .get('/api/v2/beers?style=American-Style%20Pale%20Ale')
+      .get('/api/v2/beers')
+      .query({ style: 'American-Style Pale Ale' })
       .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
@@ -269,7 +272,8 @@ describe('API Routes', () => {
 
     it('should throw an error on a failed GET to /beers/QUERY for style', (done) => {
       chai.request(server)
-      .get('/api/v2/beers?style=No%20Style%20Here')
+      .get('/api/v2/beers')
+      .query({ style: 'No Styles Here' })
       .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
