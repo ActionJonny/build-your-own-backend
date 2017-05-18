@@ -62,4 +62,21 @@ categories.post('/categories', (request, response) => {
     });
 });
 
+categories.delete('/categories/:id', (request, response) => {
+  const { id } = request.params;
+  if (!id) { return response.status(422).send({ error: 'Missing category id from delete' }); }
+
+  database('beers').where('cat_id', id)
+    .update({ cat_id: null })
+      .then(() => {
+        return database('categories').where('category_id', id).del();
+      })
+      .then(() => {
+        response.sendStatus(204);
+      })
+      .catch((error) => {
+        response.status(500).send({ error });
+      });
+});
+
 module.exports = categories;
