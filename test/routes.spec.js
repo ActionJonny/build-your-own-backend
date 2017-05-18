@@ -449,7 +449,7 @@ describe('API Routes', () => {
         response.body.should.have.property('style_id');
         response.body.name.should.equal('Pliny the Elder');
         response.body.cat_id.should.equal(10);
-        response.body.style_id.should.equal(10);
+        response.body.style_id.should.equal(31);
         done();
       });
     });
