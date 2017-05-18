@@ -287,7 +287,7 @@ describe('API Routes', () => {
   });
 
   describe('POST /api/v1/categories', () => {
-    it.only('should be able to POST a new category to the categories database', (done) => {
+    it('should be able to POST a new category to the categories database', (done) => {
       chai.request(server)
       .post('/api/v1/categories')
       .send({ name: 'Indian Pale Ales' })
