@@ -20,7 +20,7 @@ describe('API Routes', () => {
   });
 
   afterEach((done) => {
-    database.migrate.latest()
+    database.migrate.rollback()
     .then(() => {
       done();
     });
@@ -221,7 +221,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.length.should.equal(25);
-        response.body[0].cat_id.should.equal('1');
+        response.body[0].cat_id.should.equal(1);
         done();
       });
     });
@@ -244,7 +244,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.length.should.equal(45);
-        response.body[0].style_id.should.equal('26');
+        response.body[0].style_id.should.equal(26);
         done();
       });
     });
@@ -274,13 +274,41 @@ describe('API Routes', () => {
       });
     });
 
-    it('should return and error if no beers are found for the selected brewery', (done) => {
+    it('should return an error if no beers are found for the selected brewery', (done) => {
       chai.request(server)
       .get('/api/v2/breweries/1000/beers')
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
         response.body.should.deep.equal({ error: 'No beers found for this brewery' });
+        done();
+      });
+    });
+  });
+
+  describe('POST /api/v1/categories', () => {
+    it('should be able to POST a new category to the categories database', (done) => {
+      chai.request(server)
+      .post('/api/v1/categories')
+      .send({ name: 'Indian Pale Ales' })
+      .end((error, response) => {
+        response.should.have.status(201);
+        response.should.be.json;
+        response.body.should.have.property('id');
+        response.body.should.have.property('name');
+        response.body.name.should.equal('Indian Pale Ales')
+        done();
+      });
+    });
+
+    it('should return an error if a POST request is made without in correct request data', (done) => {
+      chai.request(server)
+      .post('/api/v1/categories')
+      .send({})
+      .end((error, response) => {
+        response.should.have.status(422);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Missing content from post' });
         done();
       });
     });

@@ -17,7 +17,7 @@ breweries.get('/breweries', (request, response) => {
 
 breweries.get('/breweries/:id', (request, response) => {
   const { id } = request.params;
-  database('breweries').where('id', id)
+  database('breweries').where('brewery_id', id)
     .then((brewery) => {
       if (!brewery.length) {
         response.status(404).send({ error: 'Brewery does not exist' });

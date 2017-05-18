@@ -17,7 +17,7 @@ styles.get('/styles', (request, response) => {
 
 styles.get('/styles/:id', (request, response) => {
   const { id } = request.params;
-  database('styles').where('id', id)
+  database('styles').where('style_id', id)
     .then((style) => {
       if (!style.length) {
         response.status(404).send({ error: 'Style does not exist' });
