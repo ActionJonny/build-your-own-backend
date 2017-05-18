@@ -30,4 +30,21 @@ styles.get('/styles/:id', (request, response) => {
     });
 });
 
+styles.post('/styles', (request, response) => {
+  const { name, category_id } = request.body;
+  if (!name || !category_id) { return response.status(422).send({ error: 'Missing content from post' }); }
+
+  database('styles').max('style_id')
+    .then((id) => {
+      const style_id = id[0].max += 1;
+      database('styles').insert({ name, style_id, category_id }, ['id', 'style_id', 'category_id', 'name'])
+        .then((style) => {
+          response.status(201).json(...style);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+    });
+});
+
 module.exports = styles;
