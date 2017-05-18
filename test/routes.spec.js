@@ -27,7 +27,6 @@ describe('API Routes', () => {
   });
 
   describe('GET /api/v1/categories', () => {
-    console.log(process.env.TOKEN);
     it('should return a json object of all beer categories', (done) => {
       chai.request(server)
       .get('/api/v1/categories')
@@ -328,11 +327,49 @@ describe('API Routes', () => {
       });
     });
 
-    it('should return an error if a POST request is made without in correct request data', (done) => {
+    it('should return an error if a POST request to categories is made without in correct request data', (done) => {
       chai.request(server)
       .post('/api/v1/categories')
       .set('Authorization', process.env.TOKEN)
       .send({})
+      .end((error, response) => {
+        response.should.have.status(422);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Missing content from post' });
+        done();
+      });
+    });
+  });
+
+  describe('POST /api/v1/styles', () => {
+    it('should be able to POST a new style to the styles database', (done) => {
+      chai.request(server)
+      .post('/api/v1/styles')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'Traditional IPA',
+        category_id: 10,
+      })
+      .end((error, response) => {
+        response.should.have.status(201);
+        response.should.be.json;
+        response.body.should.have.property('id');
+        response.body.should.have.property('style_id');
+        response.body.should.have.property('category_id');
+        response.body.should.have.property('name');
+        response.body.name.should.equal('Traditional IPA');
+        response.body.category_id.should.equal(10);
+        done();
+      });
+    });
+
+    it('should return an error if a POST request to styles is made without in correct request data', (done) => {
+      chai.request(server)
+      .post('/api/v1/styles')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'Traditional IPA',
+      })
       .end((error, response) => {
         response.should.have.status(422);
         response.body.should.have.property('error');
