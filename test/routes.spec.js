@@ -497,10 +497,11 @@ describe('API Routes', () => {
 
   it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
     chai.request(server)
-    .delete('/api/v1/categories/')
+    .delete('/api/v1/categories/12')
     .set('Authorization', process.env.TOKEN)
     .end((err, response) => {
       response.should.have.status(404);
+      response.body.should.deep.equal({ error: 'Invalid Category ID' });
       done();
     });
   });
