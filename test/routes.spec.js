@@ -20,7 +20,7 @@ describe('API Routes', () => {
   });
 
   afterEach((done) => {
-    database.migrate.latest()
+    database.migrate.rollback()
     .then(() => {
       done();
     });
@@ -221,7 +221,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.length.should.equal(25);
-        response.body[0].cat_id.should.equal('1');
+        response.body[0].cat_id.should.equal(1);
         done();
       });
     });
@@ -244,7 +244,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.length.should.equal(45);
-        response.body[0].style_id.should.equal('26');
+        response.body[0].style_id.should.equal(26);
         done();
       });
     });
@@ -292,12 +292,11 @@ describe('API Routes', () => {
       .post('/api/v1/categories')
       .send({ name: 'Indian Pale Ales' })
       .end((error, response) => {
-        console.log(response);
         response.should.have.status(201);
         response.should.be.json;
         response.body.should.have.property('id');
         response.body.should.have.property('name');
-        response.body.name.should.equal('Indian Pale Ale')
+        response.body.name.should.equal('Indian Pale Ales')
         done();
       });
     });
