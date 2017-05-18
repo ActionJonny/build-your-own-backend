@@ -86,4 +86,22 @@ beers.post('/beers', (request, response) => {
     });
 });
 
+beers.delete('/beers/:id', (request, response) => {
+  const { id } = request.params;
+  database('beers').where('beer_id', id).select()
+    .then((data) => {
+      if(!data.length) {
+        response.status(404).send({ error: 'Invalid Beer ID' });
+      } else {
+        database('beers').where('beer_id', id).del()
+        .then(() => {
+          response.sendStatus(204);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+      }
+    })
+});
+
 module.exports = beers;
