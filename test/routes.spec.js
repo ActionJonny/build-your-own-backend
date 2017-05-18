@@ -327,7 +327,7 @@ describe('API Routes', () => {
       });
     });
 
-    it('should return an error if a POST request to categories is made without in correct request data', (done) => {
+    it('should return an error if a POST request to categories is made without correct request data', (done) => {
       chai.request(server)
       .post('/api/v1/categories')
       .set('Authorization', process.env.TOKEN)
@@ -363,7 +363,7 @@ describe('API Routes', () => {
       });
     });
 
-    it('should return an error if a POST request to styles is made without in correct request data', (done) => {
+    it('should return an error if a POST request to styles is made without correct request data', (done) => {
       chai.request(server)
       .post('/api/v1/styles')
       .set('Authorization', process.env.TOKEN)
@@ -410,7 +410,7 @@ describe('API Routes', () => {
       });
     });
 
-    it('should return an error if a POST request to breweries is made without in correct request data', (done) => {
+    it('should return an error if a POST request to breweries is made without correct request data', (done) => {
       chai.request(server)
       .post('/api/v2/breweries')
       .set('Authorization', process.env.TOKEN)
@@ -420,6 +420,47 @@ describe('API Routes', () => {
         state: 'CA',
         code: '92121',
         country: 'United States',
+      })
+      .end((error, response) => {
+        response.should.have.status(422);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Missing content from post' });
+        done();
+      });
+    });
+  });
+
+  describe('POST /api/v2/beers', () => {
+    it('should be able to POST a new beers to the beers database', (done) => {
+      chai.request(server)
+      .post('/api/v2/beers')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'Pliny the Elder',
+        cat_id: 10,
+        style_id: 31,
+      })
+      .end((error, response) => {
+        response.should.have.status(201);
+        response.should.be.json;
+        response.body.should.have.property('id');
+        response.body.should.have.property('beer_id');
+        response.body.should.have.property('cat_id');
+        response.body.should.have.property('style_id');
+        response.body.name.should.equal('Pliny the Elder');
+        response.body.cat_id.should.equal(10);
+        response.body.style_id.should.equal(31);
+        done();
+      });
+    });
+
+    it('should return an error if a POST request to beers is made without correct request data', (done) => {
+      chai.request(server)
+      .post('/api/v2/beers')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: '2x4',
+        cat_id: 10,
       })
       .end((error, response) => {
         response.should.have.status(422);
