@@ -15,7 +15,6 @@ if (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD) {
 }
 app.set('secretKey', config.CLIENT_SECRET);
 const token = jwt.sign('token', app.get('secretKey'));
-console.log(token);
 
 const checkAuth = (request, response, next) => {
   const token = request.body.token ||

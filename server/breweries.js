@@ -45,4 +45,25 @@ breweries.get('/breweries/:id/beers', (request, response) => {
     });
 });
 
+breweries.post('/breweries', (request, response) => {
+  const expectedRequest = ['name', 'address1', 'city', 'state', 'code', 'country'];
+  const isMissing = expectedRequest.every(param => request.body[param]);
+  let brewery = request.body;
+
+  if (!isMissing) { return response.status(422).send({ error: 'Missing content from post' }); }
+
+  database('breweries').max('brewery_id')
+    .then((id) => {
+      const brewery_id = id[0].max += 1;
+      brewery = Object.assign({}, brewery, { brewery_id });
+      database('breweries').insert(brewery, ['id', 'name', 'brewery_id', 'address1', 'city', 'state', 'code', 'country'])
+        .then((brewery) => {
+          response.status(201).json(...brewery);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+    });
+});
+
 module.exports = breweries;
