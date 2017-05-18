@@ -505,4 +505,39 @@ describe('API Routes', () => {
     });
   });
 
+  describe('DELETE /api/v2/beers/:id', () => {
+    it('should be able to DELETE a specific beer', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers')
+      .set('Authorization', process.env.TOKEN)
+      .end((err, response) => {
+        response.body.length.should.equal(500);
+        chai.request(server)
+        .delete('/api/v2/beers/111')
+        .set('Authorization', process.env.TOKEN)
+        .end((err, response) => {
+          response.should.have.status(204);
+          chai.request(server)
+          .get('/api/v2/beers')
+          .set('Authorization', process.env.TOKEN)
+          .end((err, response) => {
+            response.body.length.should.equal(499);
+            done();
+          });
+        });
+      });
+    });
+  });
+
+  it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
+    chai.request(server)
+    .delete('/api/v2/beers/1000')
+    .set('Authorization', process.env.TOKEN)
+    .end((err, response) => {
+      response.should.have.status(404);
+      response.body.should.deep.equal({ error: 'Invalid Beer ID' });
+      done();
+    });
+  });
+
 });
