@@ -7,8 +7,8 @@ const database = require('knex')(configuration);
 
 categories.get('/categories', (request, response) => {
   database('categories').select()
-    .then((categories) => {
-      response.status(200).json(categories);
+    .then((allCategories) => {
+      response.status(200).json(allCategories);
     })
     .catch((error) => {
       response.status(500).send({ error });
@@ -39,6 +39,19 @@ categories.get('/categories/:id/styles', (request, response) => {
       } else {
         response.status(200).json(styles);
       }
+    })
+    .catch((error) => {
+      response.status(500).send({ error });
+    });
+});
+
+categories.post('/categories', (request, response) => {
+  const { name } = request.body;
+  if (!name) { return response.status(422).send({ error: 'Missing content from post' }); }
+
+  database('categories').insert({ name }, ['id', 'name'])
+    .then((category) => {
+      response.status(201).json(...category)
     })
     .catch((error) => {
       response.status(500).send({ error });
