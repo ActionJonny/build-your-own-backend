@@ -17,7 +17,7 @@ categories.get('/categories', (request, response) => {
 
 categories.get('/categories/:id', (request, response) => {
   const { id } = request.params;
-  database('categories').where('id', id)
+  database('categories').where('category_id', id)
     .then((category) => {
       if (!category.length) {
         response.status(404).send({ error: 'Category does not exist' });

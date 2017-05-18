@@ -52,7 +52,7 @@ beers.get('/beers', (request, response) => {
 
 beers.get('/beers/:id', (request, response) => {
   const { id } = request.params;
-  database('beers').where('id', id)
+  database('beers').where('beer_id', id)
     .then((beer) => {
       if (!beer.length) {
         response.status(404).send({ error: 'Beer does not exist' });
