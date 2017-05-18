@@ -65,21 +65,28 @@ categories.post('/categories', (request, response) => {
 categories.delete('/categories/:id', (request, response) => {
   const { id } = request.params;
 
-  database('beers').where('cat_id', id)
-    .update({ cat_id: null })
-      .then(() => {
-        return database('styles').where('category_id', id)
-        .update({ category_id: null });
-      })
-      .then(() => {
-        return database('categories').where('category_id', id).del();
-      })
-      .then(() => {
-        response.sendStatus(204);
-      })
-      .catch((error) => {
-        response.status(500).send({ error });
-      });
+  database('categories').where('category_id', id).select()
+    .then((data) => {
+      if (!data.length) {
+        response.status(404).send({ error: 'Invalid Category ID' });
+      } else {
+        database('beers').where('cat_id', id)
+        .update({ cat_id: null })
+        .then(() => {
+          return database('styles').where('category_id', id)
+          .update({ category_id: null });
+        })
+        .then(() => {
+          return database('categories').where('category_id', id).del();
+        })
+        .then(() => {
+          response.sendStatus(204);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+      }
+    });
 });
 
 module.exports = categories;
