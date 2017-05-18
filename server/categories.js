@@ -49,12 +49,16 @@ categories.post('/categories', (request, response) => {
   const { name } = request.body;
   if (!name) { return response.status(422).send({ error: 'Missing content from post' }); }
 
-  database('categories').insert({ name }, ['id', 'name'])
-    .then((category) => {
-      response.status(201).json(...category)
-    })
-    .catch((error) => {
-      response.status(500).send({ error });
+  database('categories').max('category_id')
+    .then((id) => {
+      const category_id = id[0].max += 1;
+      database('categories').insert({ name, category_id }, ['id', 'category_id', 'name'])
+        .then((category) => {
+          response.status(201).json(...category);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
     });
 });
 
