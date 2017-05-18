@@ -65,4 +65,25 @@ beers.get('/beers/:id', (request, response) => {
     });
 });
 
+beers.post('/beers', (request, response) => {
+  const expectedRequest = ['name', 'cat_id', 'style_id'];
+  const isMissing = expectedRequest.every(param => request.body[param]);
+  let beer = request.body;
+
+  if (!isMissing) { return response.status(422).send({ error: 'Missing content from post' }); }
+
+  database('beers').max('beer_id')
+    .then((id) => {
+      const beer_id = id[0].max += 1;
+      beer = Object.assign({}, beer, { beer_id });
+      database('beers').insert(beer, ['id', 'name', 'beer_id', 'cat_id', 'style_id'])
+        .then((beer) => {
+          response.status(201).json(...beer);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+    });
+});
+
 module.exports = beers;
