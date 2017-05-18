@@ -379,4 +379,55 @@ describe('API Routes', () => {
     });
   });
 
+  describe('POST /api/v2/breweries', () => {
+    it('should be able to POST a new brewery to the breweries database', (done) => {
+      chai.request(server)
+      .post('/api/v2/breweries')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'Russian River',
+        address1: '725 4th St',
+        city: 'Santa Rosa',
+        state: 'CA',
+        code: '95404',
+        country: 'United States',
+      })
+      .end((error, response) => {
+        response.should.have.status(201);
+        response.should.be.json;
+        response.body.should.have.property('id');
+        response.body.should.have.property('brewery_id');
+        response.body.should.have.property('name');
+        response.body.should.have.property('address1');
+        response.body.should.have.property('city');
+        response.body.should.have.property('state');
+        response.body.should.have.property('code');
+        response.body.should.have.property('country');
+        response.body.name.should.equal('Russian River');
+        response.body.city.should.equal('Santa Rosa');
+        response.body.state.should.equal('CA');
+        done();
+      });
+    });
+
+    it('should return an error if a POST request to breweries is made without in correct request data', (done) => {
+      chai.request(server)
+      .post('/api/v2/breweries')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'Ballast Point',
+        city: 'Temecula',
+        state: 'CA',
+        code: '92121',
+        country: 'United States',
+      })
+      .end((error, response) => {
+        response.should.have.status(422);
+        response.body.should.have.property('error');
+        response.body.should.deep.equal({ error: 'Missing content from post' });
+        done();
+      });
+    });
+  });
+
 });
