@@ -33,8 +33,8 @@ module.exports = {
       directory: './db/migrations',
     },
     useNullAsDefault: true,
-  },
-  seeds: {
-    directory: './db/seeds/dev',
+    seeds: {
+      directory: './db/seeds/dev',
+    },
   },
 };
