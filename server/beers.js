@@ -104,4 +104,32 @@ beers.delete('/beers/:id', (request, response) => {
     })
 });
 
+beers.put('/beers/:id', (request, response) => {
+  const expectedRequest = ['beer_id', 'name', 'cat_id', 'style_id', 'brewery_id'];
+  const isMissing = expectedRequest.every(param => request.body[param]);
+  const beer = request.body;
+
+  if (!isMissing) { return response.status(422).send({ error: 'Missing content from put' }); }
+
+  const { id } = request.params;
+  database('beers').where('beer_id', id).select()
+    .then((data) => {
+      if(!data.length) {
+        console.log('IF');
+        response.status(404).send({ error: 'Invalid Beer ID' });
+      } else {
+        console.log('ELSE');
+        database('beers').where('beer_id', id)
+        .update(beer, ['beer_id', 'name', 'cat_id', 'style_id', 'brewery_id'])
+        .then((updatedBeer) => {
+          response.status(200).send(...updatedBeer);
+        })
+        .catch((error) => {
+          console.log('CATCH');
+          response.status(500).send({ error });
+        });
+      }
+    })
+});
+
 module.exports = beers;
