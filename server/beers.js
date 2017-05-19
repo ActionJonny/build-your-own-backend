@@ -1,4 +1,5 @@
 const express = require('express');
+
 const beers = express.Router();
 
 const environment = process.env.NODE_ENV || 'development';
@@ -90,7 +91,7 @@ beers.delete('/beers/:id', (request, response) => {
   const { id } = request.params;
   database('beers').where('beer_id', id).select()
     .then((data) => {
-      if(!data.length) {
+      if (!data.length) {
         response.status(404).send({ error: 'Invalid Beer ID' });
       } else {
         database('beers').where('beer_id', id).del()
@@ -101,7 +102,32 @@ beers.delete('/beers/:id', (request, response) => {
           response.status(500).send({ error });
         });
       }
-    })
+    });
+});
+
+beers.put('/beers/:id', (request, response) => {
+  const { id } = request.params;
+  const expectedRequest = ['beer_id', 'name', 'cat_id', 'style_id', 'brewery_id'];
+  const isMissing = expectedRequest.every(param => request.body[param]);
+  const beer = request.body;
+
+  if (!isMissing) { return response.status(422).send({ error: 'Missing content from put' }); }
+
+  database('beers').where('beer_id', id).select()
+    .then((data) => {
+      if (!data.length) {
+        response.status(404).send({ error: 'Invalid Beer ID' });
+      } else {
+        database('beers').where('beer_id', id)
+        .update(beer, ['beer_id', 'name', 'cat_id', 'style_id', 'brewery_id'])
+        .then((updatedBeer) => {
+          response.status(200).send(...updatedBeer);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+      }
+    });
 });
 
 module.exports = beers;

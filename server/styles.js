@@ -1,4 +1,5 @@
 const express = require('express');
+
 const styles = express.Router();
 
 const environment = process.env.NODE_ENV || 'development';
