@@ -476,17 +476,17 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v1/categories')
       .set('Authorization', process.env.TOKEN)
-      .end((err, response) => {
+      .end((error, response) => {
         response.body.length.should.equal(11);
         chai.request(server)
         .delete('/api/v1/categories/11')
         .set('Authorization', process.env.TOKEN)
-        .end((err, response) => {
+        .end((error, response) => {
           response.should.have.status(204);
           chai.request(server)
           .get('/api/v1/categories')
           .set('Authorization', process.env.TOKEN)
-          .end((err, response) => {
+          .end((error, response) => {
             response.body.length.should.equal(10);
             done();
           });
@@ -498,7 +498,7 @@ describe('API Routes', () => {
       chai.request(server)
       .delete('/api/v1/categories/12')
       .set('Authorization', process.env.TOKEN)
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(404);
         response.body.should.deep.equal({ error: 'Invalid Category ID' });
         done();
@@ -511,17 +511,17 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v2/beers')
       .set('Authorization', process.env.TOKEN)
-      .end((err, response) => {
+      .end((error, response) => {
         response.body.length.should.equal(500);
         chai.request(server)
         .delete('/api/v2/beers/111')
         .set('Authorization', process.env.TOKEN)
-        .end((err, response) => {
+        .end((error, response) => {
           response.should.have.status(204);
           chai.request(server)
           .get('/api/v2/beers')
           .set('Authorization', process.env.TOKEN)
-          .end((err, response) => {
+          .end((error, response) => {
             response.body.length.should.equal(499);
             done();
           });
@@ -533,7 +533,7 @@ describe('API Routes', () => {
       chai.request(server)
       .delete('/api/v2/beers/1000')
       .set('Authorization', process.env.TOKEN)
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(404);
         response.body.should.deep.equal({ error: 'Invalid Beer ID' });
         done();
@@ -546,7 +546,7 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v2/breweries')
       .set('Authorization', process.env.TOKEN)
-      .end((err, response) => {
+      .end((error, response) => {
         response.body[0].name.should.equal('(512) Brewing Company');
         response.body[0].address1.should.equal('407 Radam, F200');
         response.body[0].city.should.equal('Austin');
@@ -560,7 +560,7 @@ describe('API Routes', () => {
           name: 'New Brewery Name',
           address1: 'New Address',
         })
-        .end((err, response) => {
+        .end((error, response) => {
           response.should.have.status(200);
           response.body.name.should.equal('New Brewery Name');
           response.body.address1.should.equal('New Address');
@@ -580,7 +580,7 @@ describe('API Routes', () => {
       .send({
         invaildKey: 'This won\'t work Brewery',
       })
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(422);
         response.body.should.deep.equal({ error: 'Missing content from patch' });
         done();
@@ -594,7 +594,7 @@ describe('API Routes', () => {
       .send({
         state: 'Colorado',
       })
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(404);
         response.body.should.deep.equal({ error: 'Invalid Brewery ID' });
         done();
@@ -610,7 +610,7 @@ describe('API Routes', () => {
         address1: 'New Brewery Address',
         brewery_id: 97,
       })
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(500);
         response.body.error.name.should.equal('error');
         response.body.error.detail.should.equal('Key (brewery_id)=(97) already exists.');
@@ -624,7 +624,7 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v1/styles')
       .set('Authorization', process.env.TOKEN)
-      .end((err, response) => {
+      .end((error, response) => {
         response.body[0].name.should.equal('Classic English-Style Pale Ale');
         response.body[0].style_id.should.equal(1);
         response.body[0].category_id.should.equal(1);
@@ -635,7 +635,7 @@ describe('API Routes', () => {
           name: 'New Classic Style of Pale Ale',
           category_id: 11,
         })
-        .end((err, response) => {
+        .end((error, response) => {
           response.should.have.status(200);
           response.body.name.should.equal('New Classic Style of Pale Ale');
           response.body.style_id.should.equal(1);
@@ -652,7 +652,7 @@ describe('API Routes', () => {
       .send({
         invaildKey: 'This style will not work',
       })
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(422);
         response.body.should.deep.equal({ error: 'Missing content from patch' });
         done();
@@ -667,7 +667,7 @@ describe('API Routes', () => {
         name: 'New Classic Style of Pale Ale',
         style_id: 11,
       })
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(404);
         response.body.should.deep.equal({ error: 'Invalid Beer Style ID' });
         done();
@@ -682,10 +682,98 @@ describe('API Routes', () => {
         name: 'New Classic Style of Pale Ale',
         style_id: 11,
       })
-      .end((err, response) => {
+      .end((error, response) => {
         response.should.have.status(500);
         response.body.error.name.should.equal('error');
         response.body.error.detail.should.equal('Key (style_id)=(11) already exists.');
+        done();
+      });
+    });
+  });
+
+  describe('PUT /api/v2/beers/:id', () => {
+    it('should be able to PUT a specific beer', (done) => {
+      chai.request(server)
+      .get('/api/v2/beers')
+      .set('Authorization', process.env.TOKEN)
+      .end((error, response) => {
+        response.body[0].beer_id.should.equal(1);
+        response.body[0].name.should.equal('Hocus Pocus');
+        response.body[0].cat_id.should.equal(11);
+        response.body[0].style_id.should.equal(116);
+        response.body[0].brewery_id.should.equal(812);
+        chai.request(server)
+        .put('/api/v2/beers/1')
+        .set('Authorization', process.env.TOKEN)
+        .send({
+          beer_id: 1,
+          name: 'New Beer Name',
+          cat_id: 5,
+          style_id: 2,
+          brewery_id: 5,
+        })
+        .end((error, response) => {
+          response.should.have.status(200);
+          response.body.beer_id.should.equal(1);
+          response.body.name.should.equal('New Beer Name');
+          response.body.cat_id.should.equal(5);
+          response.body.style_id.should.equal(2);
+          response.body.brewery_id.should.equal(5);
+          done();
+        });
+      });
+    });
+
+    it('should respond with a 422 warning if a PUT is attempted without correct params', (done) => {
+      chai.request(server)
+      .put('/api/v2/beers/32')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        beer_id: 32,
+        cat_id: 2,
+        style_id: 345,
+        brewery_id: 20,
+      })
+      .end((error, response) => {
+        response.should.have.status(422);
+        response.body.should.deep.equal({ error: 'Missing content from put' });
+        done();
+      });
+    });
+
+    it('should respond with a 404 warning if a PUT is attempted with an incorrect Beer ID', (done) => {
+      chai.request(server)
+      .put('/api/v2/beers/52111')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        beer_id: 52111,
+        name: 'New Beer Name',
+        cat_id: 9,
+        style_id: 45,
+        brewery_id: 14,
+      })
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.deep.equal({ error: 'Invalid Beer ID' });
+        done();
+      });
+    });
+
+    it('should respond with an error if a PUT attempts to add a beer_id that already exists', (done) => {
+      chai.request(server)
+      .put('/api/v2/beers/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        beer_id: 10,
+        name: 'New Beer Name',
+        cat_id: 3,
+        style_id: 452,
+        brewery_id: 534,
+      })
+      .end((error, response) => {
+        response.should.have.status(500);
+        response.body.error.name.should.equal('error');
+        response.body.error.detail.should.equal('Key (beer_id)=(10) already exists.');
         done();
       });
     });
