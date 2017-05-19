@@ -6,6 +6,8 @@ const environment = process.env.NODE_ENV || 'development';
 const configuration = require('../knexfile')[environment];
 const database = require('knex')(configuration);
 
+const checkAuth = require('./checkAuth');
+
 breweries.get('/breweries', (request, response) => {
   database('breweries').select()
     .then((allBreweries) => {
@@ -46,7 +48,7 @@ breweries.get('/breweries/:id/beers', (request, response) => {
     });
 });
 
-breweries.post('/breweries', (request, response) => {
+breweries.post('/breweries', checkAuth, (request, response) => {
   const expectedRequest = ['name', 'address1', 'city', 'state', 'code', 'country'];
   const isMissing = expectedRequest.every(param => request.body[param]);
   let brewery = request.body;
@@ -67,7 +69,7 @@ breweries.post('/breweries', (request, response) => {
     });
 });
 
-breweries.patch('/breweries/:id', (request, response) => {
+breweries.patch('/breweries/:id', checkAuth, (request, response) => {
   const { id } = request.params;
   const expectedRequest = ['brewery_id', 'name', 'address1', 'city', 'state', 'code', 'country'];
   const isMissing = expectedRequest.some(param => request.body[param]);

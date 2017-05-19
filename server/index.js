@@ -4,7 +4,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
-const checkAuth = require('./checkAuth');
 const categories = require('./categories');
 const styles = require('./styles');
 const breweries = require('./breweries');
@@ -17,7 +16,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(bodyParser.json());
-app.use(checkAuth);
 app.use('/api/v1', categories);
 app.use('/api/v1', styles);
 app.use('/api/v2', breweries);

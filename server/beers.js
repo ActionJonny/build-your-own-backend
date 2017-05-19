@@ -6,6 +6,8 @@ const environment = process.env.NODE_ENV || 'development';
 const configuration = require('../knexfile')[environment];
 const database = require('knex')(configuration);
 
+const checkAuth = require('./checkAuth');
+
 beers.get('/beers', (request, response) => {
   const { category, style } = request.query;
   if (!category && !style) {
@@ -66,7 +68,7 @@ beers.get('/beers/:id', (request, response) => {
     });
 });
 
-beers.post('/beers', (request, response) => {
+beers.post('/beers', checkAuth, (request, response) => {
   const expectedRequest = ['name', 'cat_id', 'style_id'];
   const isMissing = expectedRequest.every(param => request.body[param]);
   let beer = request.body;
@@ -87,7 +89,7 @@ beers.post('/beers', (request, response) => {
     });
 });
 
-beers.delete('/beers/:id', (request, response) => {
+beers.delete('/beers/:id', checkAuth, (request, response) => {
   const { id } = request.params;
   database('beers').where('beer_id', id).select()
     .then((data) => {
@@ -105,7 +107,7 @@ beers.delete('/beers/:id', (request, response) => {
     });
 });
 
-beers.put('/beers/:id', (request, response) => {
+beers.put('/beers/:id', checkAuth, (request, response) => {
   const { id } = request.params;
   const expectedRequest = ['beer_id', 'name', 'cat_id', 'style_id', 'brewery_id'];
   const isMissing = expectedRequest.every(param => request.body[param]);

@@ -31,7 +31,6 @@ describe('API Routes', () => {
     it('should return a json object of all beer categories', (done) => {
       chai.request(server)
       .get('/api/v1/categories')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -45,7 +44,6 @@ describe('API Routes', () => {
     it('should throw an error on a failed GET to /categories', (done) => {
       chai.request(server)
       .get('/api/v1/categoriessss')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -59,7 +57,6 @@ describe('API Routes', () => {
     it('should return a json object of all beer styles', (done) => {
       chai.request(server)
       .get('/api/v1/styles')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -74,7 +71,6 @@ describe('API Routes', () => {
     it('should throw an error on a failed GET to /styles', (done) => {
       chai.request(server)
       .get('/api/v1/stylezzzzzz')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -88,7 +84,6 @@ describe('API Routes', () => {
     it('should return a single object when supplied with a valid category ID', (done) => {
       chai.request(server)
       .get('/api/v1/categories/5')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -101,7 +96,6 @@ describe('API Routes', () => {
     it('should return an error if a category can not be found', (done) => {
       chai.request(server)
       .get('/api/v1/categories/500')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -115,7 +109,6 @@ describe('API Routes', () => {
     it('should return a single object when supplied with a valid style ID', (done) => {
       chai.request(server)
       .get('/api/v1/styles/50')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -128,7 +121,6 @@ describe('API Routes', () => {
     it('should return an error if a style can not be found', (done) => {
       chai.request(server)
       .get('/api/v1/styles/5000')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -142,7 +134,6 @@ describe('API Routes', () => {
     it('should return a specific set of styles for a category', (done) => {
       chai.request(server)
       .get('/api/v1/categories/5/styles')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -155,7 +146,6 @@ describe('API Routes', () => {
     it('should return and error if no styles are found for the selected category', (done) => {
       chai.request(server)
       .get('/api/v1/categories/100/styles')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -169,7 +159,6 @@ describe('API Routes', () => {
     it('should return a json object of all breweries', (done) => {
       chai.request(server)
       .get('/api/v2/breweries')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -188,7 +177,6 @@ describe('API Routes', () => {
     it('should throw an error on a failed GET to /breweries', (done) => {
       chai.request(server)
       .get('/api/v2/breweriesssss')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -202,7 +190,6 @@ describe('API Routes', () => {
     it('should return a json object of all beers', (done) => {
       chai.request(server)
       .get('/api/v2/beers')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -218,7 +205,6 @@ describe('API Routes', () => {
     it('should throw an error on a failed GET to /beers', (done) => {
       chai.request(server)
       .get('/api/v2/beersssss')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -233,7 +219,6 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v2/beers')
       .query({ category: 'British Ale' })
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -247,7 +232,6 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v2/beers')
       .query({ category: 'No Beer Here' })
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -260,7 +244,6 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v2/beers')
       .query({ style: 'American-Style Pale Ale' })
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -274,7 +257,6 @@ describe('API Routes', () => {
       chai.request(server)
       .get('/api/v2/beers')
       .query({ style: 'No Styles Here' })
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
@@ -288,7 +270,6 @@ describe('API Routes', () => {
     it('should return a specific set of beers for a brewery', (done) => {
       chai.request(server)
       .get('/api/v2/breweries/14/beers')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
@@ -301,7 +282,6 @@ describe('API Routes', () => {
     it('should return an error if no beers are found for the selected brewery', (done) => {
       chai.request(server)
       .get('/api/v2/breweries/1000/beers')
-      .set('Authorization', process.env.TOKEN)
       .end((error, response) => {
         response.should.have.status(404);
         response.body.should.have.property('error');
