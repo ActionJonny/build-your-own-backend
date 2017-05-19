@@ -493,16 +493,16 @@ describe('API Routes', () => {
         });
       });
     });
-  });
 
-  it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
-    chai.request(server)
-    .delete('/api/v1/categories/12')
-    .set('Authorization', process.env.TOKEN)
-    .end((err, response) => {
-      response.should.have.status(404);
-      response.body.should.deep.equal({ error: 'Invalid Category ID' });
-      done();
+    it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
+      chai.request(server)
+      .delete('/api/v1/categories/12')
+      .set('Authorization', process.env.TOKEN)
+      .end((err, response) => {
+        response.should.have.status(404);
+        response.body.should.deep.equal({ error: 'Invalid Category ID' });
+        done();
+      });
     });
   });
 
@@ -528,16 +528,16 @@ describe('API Routes', () => {
         });
       });
     });
-  });
 
-  it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
-    chai.request(server)
-    .delete('/api/v2/beers/1000')
-    .set('Authorization', process.env.TOKEN)
-    .end((err, response) => {
-      response.should.have.status(404);
-      response.body.should.deep.equal({ error: 'Invalid Beer ID' });
-      done();
+    it('should respond with a 404 warning if a DELETE is attempted without correct params', (done) => {
+      chai.request(server)
+      .delete('/api/v2/beers/1000')
+      .set('Authorization', process.env.TOKEN)
+      .end((err, response) => {
+        response.should.have.status(404);
+        response.body.should.deep.equal({ error: 'Invalid Beer ID' });
+        done();
+      });
     });
   });
 
@@ -572,33 +572,50 @@ describe('API Routes', () => {
         });
       });
     });
-  });
 
-  it('should respond with a 422 warning if a PATCH is attempted without correct params', (done) => {
-    chai.request(server)
-    .patch('/api/v2/breweries/1')
-    .set('Authorization', process.env.TOKEN)
-    .send({
-      invaildKey: 'This won\'t work Brewery',
-    })
-    .end((err, response) => {
-      response.should.have.status(422);
-      response.body.should.deep.equal({ error: 'Missing content from patch' });
-      done();
+    it('should respond with a 422 warning if a PATCH is attempted without correct params', (done) => {
+      chai.request(server)
+      .patch('/api/v2/breweries/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        invaildKey: 'This won\'t work Brewery',
+      })
+      .end((err, response) => {
+        response.should.have.status(422);
+        response.body.should.deep.equal({ error: 'Missing content from patch' });
+        done();
+      });
     });
-  });
 
-  it('should respond with a 404 warning if a PATCH is attempted with an incorrect Brewery ID', (done) => {
-    chai.request(server)
-    .patch('/api/v2/breweries/10000')
-    .set('Authorization', process.env.TOKEN)
-    .send({
-      state: 'Colorado',
-    })
-    .end((err, response) => {
-      response.should.have.status(404);
-      response.body.should.deep.equal({ error: 'Invalid Brewery ID' });
-      done();
+    it('should respond with a 404 warning if a PATCH is attempted with an incorrect Brewery ID', (done) => {
+      chai.request(server)
+      .patch('/api/v2/breweries/10000')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        state: 'Colorado',
+      })
+      .end((err, response) => {
+        response.should.have.status(404);
+        response.body.should.deep.equal({ error: 'Invalid Brewery ID' });
+        done();
+      });
+    });
+
+    it('should respond with an error if a PATCH attempts to add a brewery_id that already exists', (done) => {
+      chai.request(server)
+      .patch('/api/v2/breweries/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'New Brewery Name',
+        address1: 'New Brewery Address',
+        brewery_id: 97,
+      })
+      .end((err, response) => {
+        response.should.have.status(500);
+        response.body.error.name.should.equal('error');
+        response.body.error.detail.should.equal('Key (brewery_id)=(97) already exists.');
+        done();
+      });
     });
   });
 
@@ -627,35 +644,52 @@ describe('API Routes', () => {
         });
       });
     });
-  });
 
-  it('should respond with a 422 warning if a PATCH is attempted without correct params', (done) => {
-    chai.request(server)
-    .patch('/api/v1/styles/90')
-    .set('Authorization', process.env.TOKEN)
-    .send({
-      invaildKey: 'This style will not work',
-    })
-    .end((err, response) => {
-      response.should.have.status(422);
-      response.body.should.deep.equal({ error: 'Missing content from patch' });
-      done();
+    it('should respond with a 422 warning if a PATCH is attempted without correct params', (done) => {
+      chai.request(server)
+      .patch('/api/v1/styles/90')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        invaildKey: 'This style will not work',
+      })
+      .end((err, response) => {
+        response.should.have.status(422);
+        response.body.should.deep.equal({ error: 'Missing content from patch' });
+        done();
+      });
     });
-  });
 
-  it('should respond with a 404 warning if a PATCH is attempted with an incorrect Brewery ID', (done) => {
-    chai.request(server)
-    .patch('/api/v1/styles/500')
-    .set('Authorization', process.env.TOKEN)
-    .send({
-      name: 'New Classic Style of Pale Ale',
-      style_id: 11,
-    })
-    .end((err, response) => {
-      response.should.have.status(404);
-      response.body.should.deep.equal({ error: 'Invalid Beer Style ID' });
-      done();
+    it('should respond with a 404 warning if a PATCH is attempted with an incorrect Beer Style ID', (done) => {
+      chai.request(server)
+      .patch('/api/v1/styles/500')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'New Classic Style of Pale Ale',
+        style_id: 11,
+      })
+      .end((err, response) => {
+        response.should.have.status(404);
+        response.body.should.deep.equal({ error: 'Invalid Beer Style ID' });
+        done();
+      });
+    });
+
+    it('should respond with an error if a PATCH attempts to add a style_id that already exists', (done) => {
+      chai.request(server)
+      .patch('/api/v1/styles/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        name: 'New Classic Style of Pale Ale',
+        style_id: 11,
+      })
+      .end((err, response) => {
+        response.should.have.status(500);
+        response.body.error.name.should.equal('error');
+        response.body.error.detail.should.equal('Key (style_id)=(11) already exists.');
+        done();
+      });
     });
   });
 
 });
+
