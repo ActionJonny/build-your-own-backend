@@ -47,4 +47,29 @@ styles.post('/styles', (request, response) => {
     });
 });
 
+styles.patch('/styles/:id', (request, response) => {
+  const { id } = request.params;
+  const expectedRequest = ['name', 'style_id', 'category_id'];
+  const isMissing = expectedRequest.some(param => request.body[param]);
+  const style = request.body;
+
+  if (!isMissing) { return response.status(422).send({ error: 'Missing content from patch' }); }
+
+  database('styles').where('style_id', id).select()
+    .then((data) => {
+      if (!data.length) {
+        response.status(404).send({ error: 'Invalid Beer Style ID' });
+      } else {
+        database('styles').where('style_id', id)
+        .update(style, ['name', 'style_id', 'category_id'])
+        .then((updatedStyle) => {
+          response.status(200).send(...updatedStyle);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+      }
+    });
+});
+
 module.exports = styles;
