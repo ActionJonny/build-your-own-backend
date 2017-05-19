@@ -68,7 +68,7 @@ breweries.post('/breweries', (request, response) => {
 
 breweries.patch('/breweries/:id', (request, response) => {
   const { id } = request.params;
-  const expectedRequest = ['name', 'address1', 'city', 'state', 'code', 'country'];
+  const expectedRequest = ['brewery_id', 'name', 'address1', 'city', 'state', 'code', 'country'];
   const isMissing = expectedRequest.some(param => request.body[param]);
   const brewery = request.body;
 
