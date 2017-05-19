@@ -1,4 +1,5 @@
 const express = require('express');
+
 const categories = express.Router();
 
 const environment = process.env.NODE_ENV || 'development';
@@ -90,16 +91,16 @@ categories.delete('/categories/:id', (request, response) => {
 });
 
 categories.put('/categories/:id', (request, response) => {
+  const { id } = request.params;
   const expectedRequest = ['category_id', 'name'];
   const isMissing = expectedRequest.every(param => request.body[param]);
-  const { id } = request.params;
   const category = request.body;
 
   if (!isMissing) { return response.status(422).send({ error: 'Missing content from put' }); }
 
   database('categories').where('category_id', id).select()
     .then((data) => {
-      if(!data.length) {
+      if (!data.length) {
         response.status(404).send({ error: 'Invalid Category ID' });
       } else {
         database('categories').where('category_id', id)
@@ -111,7 +112,7 @@ categories.put('/categories/:id', (request, response) => {
           response.status(500).send({ error });
         });
       }
-    })
+    });
 });
 
 module.exports = categories;
