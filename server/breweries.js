@@ -70,18 +70,25 @@ breweries.patch('/breweries/:id', (request, response) => {
   const { id } = request.params;
   const expectedRequest = ['name', 'address1', 'city', 'state', 'code', 'country'];
   const isMissing = expectedRequest.some(param => request.body[param]);
-  let brewery = request.body;
+  const brewery = request.body;
 
   if (!isMissing) { return response.status(422).send({ error: 'Missing content from patch' }); }
 
-    database('breweries').where('brewery_id', id)
-    .update(brewery, ['name', 'address1', 'city', 'state', 'code', 'country'])
-      .then((updatedBrewery) => {
-        response.status(204).send(...updatedBrewery);
-      })
-      .catch((error) => {
-        response.status(500).send({ error });
-      });
+  database('breweries').where('brewery_id', id).select()
+    .then((data) => {
+      if (!data.length) {
+        response.status(404).send({ error: 'Invalid Brewery ID' });
+      } else {
+        database('breweries').where('brewery_id', id)
+        .update(brewery, ['name', 'address1', 'city', 'state', 'code', 'country'])
+        .then((updatedBrewery) => {
+          response.status(200).send(...updatedBrewery);
+        })
+        .catch((error) => {
+          response.status(500).send({ error });
+        });
+      }
+    });
 });
 
 module.exports = breweries;

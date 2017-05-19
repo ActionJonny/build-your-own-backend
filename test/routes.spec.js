@@ -541,4 +541,65 @@ describe('API Routes', () => {
     });
   });
 
+  describe('PATCH /api/v2/breweries/:id', () => {
+    it('should be able to PATCH a specific brewery', (done) => {
+      chai.request(server)
+      .get('/api/v2/breweries')
+      .set('Authorization', process.env.TOKEN)
+      .end((err, response) => {
+        response.body[0].name.should.equal('(512) Brewing Company');
+        response.body[0].address1.should.equal('407 Radam, F200');
+        response.body[0].city.should.equal('Austin');
+        response.body[0].state.should.equal('Texas');
+        response.body[0].code.should.equal('78745');
+        response.body[0].country.should.equal('United States');
+        chai.request(server)
+        .patch('/api/v2/breweries/1')
+        .set('Authorization', process.env.TOKEN)
+        .send({
+          name: 'New Brewery Name',
+          address1: 'New Address',
+        })
+        .end((err, response) => {
+          response.should.have.status(200);
+          response.body.name.should.equal('New Brewery Name');
+          response.body.address1.should.equal('New Address');
+          response.body.city.should.equal('Austin');
+          response.body.state.should.equal('Texas');
+          response.body.code.should.equal('78745');
+          response.body.country.should.equal('United States');
+          done();
+        });
+      });
+    });
+  });
+
+  it('should respond with a 422 warning if a PATCH is attempted without correct params', (done) => {
+    chai.request(server)
+    .patch('/api/v2/breweries/1')
+    .set('Authorization', process.env.TOKEN)
+    .send({
+      invaildKey: 'This won\'t work Brewery',
+    })
+    .end((err, response) => {
+      response.should.have.status(422);
+      response.body.should.deep.equal({ error: 'Missing content from patch' });
+      done();
+    });
+  });
+
+  it('should respond with a 404 warning if a PATCH is attempted with an incorrect Brewery ID', (done) => {
+    chai.request(server)
+    .patch('/api/v2/breweries/10000')
+    .set('Authorization', process.env.TOKEN)
+    .send({
+      state: 'Colorado',
+    })
+    .end((err, response) => {
+      response.should.have.status(404);
+      response.body.should.deep.equal({ error: 'Invalid Brewery ID' });
+      done();
+    });
+  });
+
 });
