@@ -4,7 +4,7 @@ const app = express();
 const jwt = require('jsonwebtoken');
 const config = require('dotenv').config().parsed;
 
-if (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD) {
+if (process.env.NODE_ENV === 'development' && (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD)) {
   throw new Error('Make sure you have a CLIENT_SECRET, USERNAME, and PASSWORD in your .env file');
 }
 
