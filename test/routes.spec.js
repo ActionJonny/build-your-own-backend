@@ -602,4 +602,60 @@ describe('API Routes', () => {
     });
   });
 
+  describe('PATCH /api/v1/styles/:id', () => {
+    it('should be able to PATCH a specific beer style', (done) => {
+      chai.request(server)
+      .get('/api/v1/styles')
+      .set('Authorization', process.env.TOKEN)
+      .end((err, response) => {
+        response.body[0].name.should.equal('Classic English-Style Pale Ale');
+        response.body[0].style_id.should.equal(1);
+        response.body[0].category_id.should.equal(1);
+        chai.request(server)
+        .patch('/api/v1/styles/1')
+        .set('Authorization', process.env.TOKEN)
+        .send({
+          name: 'New Classic Style of Pale Ale',
+          category_id: 11,
+        })
+        .end((err, response) => {
+          response.should.have.status(200);
+          response.body.name.should.equal('New Classic Style of Pale Ale');
+          response.body.style_id.should.equal(1);
+          response.body.category_id.should.equal(11);
+          done();
+        });
+      });
+    });
+  });
+
+  it('should respond with a 422 warning if a PATCH is attempted without correct params', (done) => {
+    chai.request(server)
+    .patch('/api/v1/styles/90')
+    .set('Authorization', process.env.TOKEN)
+    .send({
+      invaildKey: 'This style will not work',
+    })
+    .end((err, response) => {
+      response.should.have.status(422);
+      response.body.should.deep.equal({ error: 'Missing content from patch' });
+      done();
+    });
+  });
+
+  it('should respond with a 404 warning if a PATCH is attempted with an incorrect Brewery ID', (done) => {
+    chai.request(server)
+    .patch('/api/v1/styles/500')
+    .set('Authorization', process.env.TOKEN)
+    .send({
+      name: 'New Classic Style of Pale Ale',
+      style_id: 11,
+    })
+    .end((err, response) => {
+      response.should.have.status(404);
+      response.body.should.deep.equal({ error: 'Invalid Beer Style ID' });
+      done();
+    });
+  });
+
 });
