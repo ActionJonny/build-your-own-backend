@@ -78,8 +78,8 @@ beers.post('/beers', (request, response) => {
       const beer_id = id[0].max += 1;
       beer = Object.assign({}, beer, { beer_id });
       database('beers').insert(beer, ['id', 'name', 'beer_id', 'cat_id', 'style_id'])
-        .then((beer) => {
-          response.status(201).json(...beer);
+        .then((newBeer) => {
+          response.status(201).json(...newBeer);
         })
         .catch((error) => {
           response.status(500).send({ error });

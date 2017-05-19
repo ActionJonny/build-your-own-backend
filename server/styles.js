@@ -8,8 +8,8 @@ const database = require('knex')(configuration);
 
 styles.get('/styles', (request, response) => {
   database('styles').select()
-    .then((styles) => {
-      response.status(200).json(styles);
+    .then((allStyles) => {
+      response.status(200).json(allStyles);
     })
     .catch((error) => {
       response.status(500).send({ error });

@@ -35,7 +35,7 @@ const filterBreweries = (json) => {
 
 const filterBeers = (json) => {
   return json.reduce((array, beer) => {
-    const { id, brewery_id, name } = beer
+    const { id, brewery_id, name } = beer;
     const cat_id = beer.cat_id === '-1' ? null : beer.cat_id;
     const style_id = beer.style_id === '-1' ? null : beer.style_id;
     const newBeer = {
@@ -90,7 +90,7 @@ csv().fromFile(beersFile)
 
 csv().fromFile(breweriesFile)
   .on('end_parsed', (jsonArrObj) => {
-    const filteredBreweries = filterBreweries(jsonArrObj)
+    const filteredBreweries = filterBreweries(jsonArrObj);
     return writeToFile('./writeData/breweries.txt', filteredBreweries);
   })
   .on('error', (err) => {

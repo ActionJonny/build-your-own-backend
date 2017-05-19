@@ -8,8 +8,8 @@ const database = require('knex')(configuration);
 
 breweries.get('/breweries', (request, response) => {
   database('breweries').select()
-    .then((breweries) => {
-      response.status(200).json(breweries);
+    .then((allBreweries) => {
+      response.status(200).json(allBreweries);
     })
     .catch((error) => {
       response.status(500).send({ error });
@@ -58,8 +58,8 @@ breweries.post('/breweries', (request, response) => {
       const brewery_id = id[0].max += 1;
       brewery = Object.assign({}, brewery, { brewery_id });
       database('breweries').insert(brewery, ['id', 'name', 'brewery_id', 'address1', 'city', 'state', 'code', 'country'])
-        .then((brewery) => {
-          response.status(201).json(...brewery);
+        .then((newBrewery) => {
+          response.status(201).json(...newBrewery);
         })
         .catch((error) => {
           response.status(500).send({ error });

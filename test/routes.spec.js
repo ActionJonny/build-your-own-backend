@@ -3,7 +3,7 @@ const chai = require('chai');
 const should = chai.should();
 const chaiHttp = require('chai-http');
 
-const configuration = require('../knexfile')['test'];
+const configuration = require('../knexfile').test;
 const database = require('knex')(configuration);
 const server = require('../server/index');
 
@@ -323,7 +323,7 @@ describe('API Routes', () => {
         response.body.should.have.property('id');
         response.body.should.have.property('category_id');
         response.body.should.have.property('name');
-        response.body.name.should.equal('Indian Pale Ales')
+        response.body.name.should.equal('Indian Pale Ales');
         done();
       });
     });
@@ -849,6 +849,5 @@ describe('API Routes', () => {
       });
     });
   });
-
 });
 
