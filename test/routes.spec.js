@@ -779,5 +779,75 @@ describe('API Routes', () => {
     });
   });
 
+  describe('PUT /api/v1/categories/:id', () => {
+    it('should be able to PUT a specific category', (done) => {
+      chai.request(server)
+      .get('/api/v1/categories')
+      .set('Authorization', process.env.TOKEN)
+      .end((error, response) => {
+        response.body[0].category_id.should.equal(1);
+        response.body[0].name.should.equal('British Ale');
+        chai.request(server)
+        .put('/api/v1/categories/1')
+        .set('Authorization', process.env.TOKEN)
+        .send({
+          category_id: 1,
+          name: 'New Category Name',
+        })
+        .end((error, response) => {
+          response.should.have.status(200);
+          response.body.category_id.should.equal(1);
+          response.body.name.should.equal('New Category Name');
+          done();
+        });
+      });
+    });
+
+    it('should respond with a 422 warning if a PUT is attempted without correct params', (done) => {
+      chai.request(server)
+      .put('/api/v1/categories/5')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        category_id: 5,
+      })
+      .end((error, response) => {
+        response.should.have.status(422);
+        response.body.should.deep.equal({ error: 'Missing content from put' });
+        done();
+      });
+    });
+
+    it('should respond with a 404 warning if a PUT is attempted with an incorrect Category ID', (done) => {
+      chai.request(server)
+      .put('/api/v1/categories/500')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        category_id: 500,
+        name: 'New Category Name',
+      })
+      .end((error, response) => {
+        response.should.have.status(404);
+        response.body.should.deep.equal({ error: 'Invalid Category ID' });
+        done();
+      });
+    });
+
+    it('should respond with an error if a PUT attempts to add a category_id that already exists', (done) => {
+      chai.request(server)
+      .put('/api/v1/categories/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({
+        category_id: 6,
+        name: 'New Category Name',
+      })
+      .end((error, response) => {
+        response.should.have.status(500);
+        response.body.error.name.should.equal('error');
+        response.body.error.detail.should.equal('Key (category_id)=(6) already exists.');
+        done();
+      });
+    });
+  });
+
 });
 
