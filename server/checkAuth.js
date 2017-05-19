@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development' && (!config.CLIENT_SECRET || !config.
   throw new Error('Make sure you have a CLIENT_SECRET, USERNAME, and PASSWORD in your .env file');
 }
 
-app.set('secretKey', config.CLIENT_SECRET || process.env.CLIENT_SECRET);
+app.set('secretKey', process.env.CLIENT_SECRET || config.CLIENT_SECRET);
 const token = jwt.sign('token', app.get('secretKey'));
 
 const checkAuth = (request, response, next) => {
